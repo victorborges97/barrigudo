@@ -32,14 +32,12 @@
                 <tr>
                     <h1>Contato</h1>
                     <strong>Horário de atendimento:</strong>
-                    <br>
-                    <u>Terça a sexta</u> das 13:00 até 00:00
-                    <br>
-                    <u>Sabádo</u> das 11:00 até 02:00
-                    <br>
+                    <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
+                    <a><u>Sabádo</u> das 11:00 até 02:00</a></br></br>
                     <strong>Endereço:</strong>
-                    <br>
-                    R. Marieta Xavier Lourdes, 312 - Surubi, Itaperuna - RJ, 28300-000
+                    </br></br>
+                    <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">R. Marieta Xavier Lourdes, 312 - Surubi, Itaperuna - RJ, 28300-000</a>
+                </br>
                 </tr>
                 
             </table>
@@ -64,29 +62,51 @@
         <table border="0" style="width: 80%;*" align="center">
             <tr>
                 <th colspan="3">
-                    <h3>Entre em contato consoco a baixo:</h3>
+                    <h3>Dados do Cliente</h3>
                 </th>
             </tr>
-            <tr align="center">
-                <td style="width: 50%;">    
+            <tr align="center"> <!-- Form de Nome e Email -->
+                <td>    
                     <form>
                         Nome: <input type="name" value="Nome" id="nome" onfocus="if (this.value=='Nome') this.value='';" onblur="if (this.value=='') this.value='Nome'"></br>
-                        E-mail: <input type="email" name="E-mail" value="E-mail" id="email" onfocus="if (this.value=='E-mail') this.value='';" onblur="if (this.value=='') this.value='E-mail'"></br>
-                        Está satisfeito: <input type="radio" checked="" name="satisfeito" value="Sim" id="sim">Sim <input type="radio" name="satisfeito" value="Não" id="nao"> Não</br>
-                        Mensagem: <input type="text" value="Mensagem..." id="mensagem" onfocus="if (this.value=='Mensagem...') this.value='';" onblur="if (this.value=='') this.value='Mensagem...'"></br>
                     </form>
                 </td>
+                <td>    
+                    <form>
+                        E-mail: <input type="email" name="E-mail" value="E-mail" id="email" onfocus="if (this.value=='E-mail') this.value='';" onblur="if (this.value=='') this.value='E-mail'"></br>
+                    </form>
+                </td>
+            </tr>
+            </br>
+            </br>
+            <tr> <!-- Form de Satisfação -->
+                <td>    
+                    <form>
+                        Está satisfeito: <input type="radio" checked="" name="satisfeito" value="Sim" id="sim">Sim <input type="radio" name="satisfeito" value="Não" id="nao"> Não</br>
+                    </form>
+                </td>
+            </tr>
+            </br>
+            </br>
+            <tr> <!-- Form de Consumidos -->
                 <td>
-                            Lanches consumidos: </br>
+                    Lanches consumidos: </br>
+                </td>
+                <td align="left">
                             <input type="checkbox" value="Gordo Bacon" id="gordo_bacon">Gordo Bacon</br>
                             <input type="checkbox" value="Gordo Dieta" id="gordo_dieta">Gordo Dieta</br>
                             <input type="checkbox" value="Gorduchao" id="gorduchao">Gorduchao</br>
                 </td>    
             </tr>
+            </br>
+            </br>
             <tr>
                 <td colspan="3">
                     <form oninput="enviado.value=(enviado)">
-                    </br></br><input type="submit" value="Enviar" id="enviar" name="enviado">
+                    </br>
+                    Mensagem: <input type="text" value="Mensagem..." id="mensagem" onfocus="if (this.value=='Mensagem...') this.value='';" onblur="if (this.value=='') this.value='Mensagem...'"></br>
+                    </br>
+                    <input type="submit" value="Enviar" id="enviar" name="enviado" href="javascript:alert('Enviado com Sucesso');">
                     </form>
                 </td>  
             </br>
