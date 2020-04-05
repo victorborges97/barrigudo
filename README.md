@@ -1,4 +1,6 @@
 # Site-Barrigudo
 Projeto de Internet I
 
-victorborges97.github.io/barrigudo
+Projeto de Site sem CSS finalizado.
+
+https://victorborges97.github.io/barrigudo
