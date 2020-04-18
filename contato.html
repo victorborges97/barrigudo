@@ -8,11 +8,10 @@
     </head>
     <body align="center">
         <table border="0" style="width: 80%;*" align="center">
-            <!--LOGO E GUIA DE PAGINAS-->
             <tr>
                 <td>
                     <a href="index.html">
-                        <img src="./img/4.png" alt="logo do site, barrigudo é como sairá daqui" onclick="ocultaForm()" width="200px" height="86px">
+                        <img src="./img/4.png" alt="logo do site, barrigudo é como sairá daqui" width="200px" height="86px">
                     </a>
                 </td>
                 <td align="right">
@@ -34,78 +33,65 @@
         </br>
         <table border="0" style="width: 80%;*" align="center">
             <tr>
-                <td colspan="3">
-                    <h1>Contato</h1>
-                </td>
+                <h1>Contato</h1>
             </tr>
             <tr>
                 <td style="width: 50%;">
                     <strong>Horário de atendimento:</strong>
                     <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
                     <p><u>Sabádo</u> das 11:00 até 02:00</p>
-                    </br>
                 </td>
                 <td style="width: 50%;">
                     <strong>Endereço:</strong>
-                    </br></br>
                     <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
                 </td>
             </tr>
         </table>
-        </br>
-        </br>
         <!--formulario para entrar em contato-->
         <table border="0" style="width: 80%;*" align="center">
-            <tr>
-                <th colspan="3">
+            <form>
+                <tr>
                     <h3>Dados do Cliente</h3>
-                </th>
-            </tr>
-            <tr align="center"> <!-- Form de Nome e Email -->
-                <td>    
-                    <form>
-                        Nome: <input type="name" value="Nome" id="nome" onfocus="if (this.value=='Nome') this.value='';" onblur="if (this.value=='') this.value='Nome'"></br>
-                    </form>
-                </td>
-                <td>    
-                    <form>
-                        E-mail: <input type="email" value="E-mail" id="email" onfocus="if (this.value=='E-mail') this.value='';" onblur="if (this.value=='') this.value='E-mail'"></br>
-                    </form>
-                </td>
-            </tr>
-            <!-- Form de Satisfação -->
-            <tr> 
-                <td>    
-                    <form>
-                        Está satisfeito: <input type="radio" checked="" name="satisfeito" value="Sim" id="sim">Sim <input type="radio" name="satisfeito" value="Não" id="nao"> Não</br>
-                    </form>
-                </td>
-            </tr>
-            <tr> <!-- Form de Consumidos -->
-                <td align="right">
-                    Lanches consumidos: </br>
-                </td>
-                <td align="left">
-                            <input type="checkbox" value="Gordo Bacon" id="gordo_bacon">Gordo Bacon</br>
-                            <input type="checkbox" value="Gordo Dieta" id="gordo_dieta">Gordo Dieta</br>
-                            <input type="checkbox" value="Gorduchao" id="gorduchao">Gorduchao</br>
-                </td>    
-            </tr>
-            </br>
-            </br>
-            <tr>
-                <td colspan="3">
-                    <form oninput="enviado.value=(enviado)">
+                </tr>
+                <tr align="center"> <!-- Parte do form de Nome e Email -->
+                    <td>    
+                        Nome: <input type="name" placeholder="Nome" >
+                    </td>
+                    <td>    
+                        E-mail: <input type="email" placeholder="E-mail" >
+                    </td>
+                </tr>
+                <!-- Parte do form de Satisfação -->
+                <tr> 
+                    <td>    
+                        Está satisfeito:    
+                        <input type="radio" name="satisfeito" value="Sim">Sim 
+                        <input type="radio" name="satisfeito" value="Não"> Não
+                    </td>
+                </tr>
+                <tr> <!-- Parte do form de Consumidos -->
+                    <td align="right">
+                        Lanches consumidos: </br>
+                    </td>
+                    <td align="left">
+                                <input type="checkbox" value="Gordo Bacon">Gordo Bacon</br>
+                                <input type="checkbox" value="Gordo Dieta">Gordo Dieta</br>
+                                <input type="checkbox" value="Gorduchao">Gorduchao</br>
+                    </td>    
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <p>Mensagem:</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <textarea placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea>
                     </br>
-                    Mensagem:
-                    </br> 
-                    <textarea style="width: 500px; height: 100px;"></textarea>
-                    </br>
-                    </br>
-                    <input type="submit" value="Enviar" id="enviar">
-                    </form>
-                </td>  
-            </br>
+                        <input type="submit"  id="enviar">
+                    </td>
+                </tr> 
+            </form> 
         </table>
         </br>
         </br>
