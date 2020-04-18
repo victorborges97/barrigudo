@@ -55,10 +55,10 @@
                 </tr>
                 <tr align="center"> <!-- Parte do form de Nome e Email -->
                     <td>    
-                        Nome: <input type="name" placeholder="Nome" >
+                        Nome: <input type="name" name="nome" placeholder="Nome" >
                     </td>
                     <td>    
-                        E-mail: <input type="email" placeholder="E-mail" >
+                        E-mail: <input type="email" name="e-mail" placeholder="E-mail" >
                     </td>
                 </tr>
                 <!-- Parte do form de Satisfação -->
@@ -74,9 +74,9 @@
                         Lanches consumidos: </br>
                     </td>
                     <td align="left">
-                                <input type="checkbox" value="Gordo Bacon">Gordo Bacon</br>
-                                <input type="checkbox" value="Gordo Dieta">Gordo Dieta</br>
-                                <input type="checkbox" value="Gorduchao">Gorduchao</br>
+                                <input type="checkbox" name="consumidos" value="Gordo Bacon">Gordo Bacon</br>
+                                <input type="checkbox" name="consumidos" value="Gordo Dieta">Gordo Dieta</br>
+                                <input type="checkbox" name="consumidos" value="Gorduchao">Gorduchao</br>
                     </td>    
                 </tr>
                 <tr>
@@ -86,13 +86,13 @@
                 </tr>
                 <tr>
                     <td colspan="3">
-                        <textarea placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea>
+                        <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea>
                     </br>
-                        <input type="submit"  id="enviar">
+                        <input type="submit"  name="botao">
                     </td>
-                </tr> 
+                </tr>
             </form> 
-        </table>
+        </table> 
         </br>
         </br>
         </br>
