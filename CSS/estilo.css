@@ -7,12 +7,26 @@
 body {
 	font-size: 1em;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;	
+	background-image: url(../img/border.png);
 }
 /**/
-.corpo {
+/*formatação geral*/
+.corpo {	
 	background: #fbfbf5;
-}
+	}
 
 .logo {
 	border: 5px  #a0d5d3 solid;
 }
+
+nav {
+	position: absolute;
+	right: 20px;
+	bottom: 0px;
+}
+
+#rodape {
+	margin: 50px;
+}
+/**/
+/*Index*/
