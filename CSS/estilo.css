@@ -7,7 +7,7 @@
 body {
 	font-size: 1em;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;	
-	background-image: url(../img/border.png);
+	background: #cd0046;
 }
 /**/
 /*formatação geral*/
@@ -16,17 +16,34 @@ body {
 	}
 
 .logo {
-	border: 5px  #a0d5d3 solid;
-}
-
-nav {
-	position: absolute;
-	right: 20px;
-	bottom: 0px;
+	border: 6px  #a0d5d3 solid;
 }
 
 #rodape {
 	margin: 60px;
 }
 /**/
-/*Index*/
+/*NAVEGACAO*/
+nav {
+	position: absolute;
+	right: 20px;
+	bottom: -20px;
+}
+
+nav li{
+	list-style: none;
+	width: 700px;
+	display: inline;
+	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
+	font-size: 16px;
+}
+
+nav a{
+	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
+	color: #fff;
+}
+
+ul a:hover {
+	color: #894a1f;
+	text-decoration: none;
+}
