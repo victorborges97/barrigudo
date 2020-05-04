@@ -23,7 +23,7 @@ body {
 	margin: 60px;
 }
 /**/
-/*NAVEGACAO*/
+/*NAV formatação*/
 nav {
 	position: absolute;
 	right: 20px;
@@ -36,14 +36,24 @@ nav li{
 	display: inline;
 	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
 	font-size: 16px;
+	padding: 0.5px;
 }
 
 nav a{
 	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
 	color: #fff;
+	padding: 0.5px;
 }
 
 ul a:hover {
 	color: #894a1f;
 	text-decoration: none;
 }
+ul #atual{
+	background: url(../img/Navegação/aba-direita-atual.png) no-repeat top right;	
+}
+
+ul #atual a{
+	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
+}
+/**/
