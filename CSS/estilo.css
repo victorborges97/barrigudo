@@ -10,9 +10,42 @@ body {
 }
 /**/
 .corpo {
-	background: #fbfbf5;
+	background-image: url("/img/fundo.png");
+  	background-color: #cccccc;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
 }
 
 .logo {
 	border: 5px  #a0d5d3 solid;
+}
+.col-4 {
+	list-style: none;
+	text-align: center;
+}
+.dep {
+	text-align: center;
+}
+.col-sm {
+	text-align: center;
+}
+.menu {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.menu .link {
+	text-decoration: none;
+	color: black;	
+}
+.dest {
+	text-align: center;
+}
+#rodape {
+	margin-top: 20px;
+}
+.banner {
+	width: 80%;
 }
