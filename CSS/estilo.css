@@ -4,42 +4,40 @@
 	padding: 0;
 }
 
-body {
-	font-size: 1em;
-	font-family:"Trebuchet MS", Helvetica, sans-serif; 
-	background: #F8F8FF;
-}
-/**/
-.corpo {
-	background-image: url("/img/fundo.png");
-  	background-color: #cccccc;
-  	background-position: center;
-  	background-repeat: no-repeat;
-  	background-size: cover;
-  	position: relative;
+body {	
+	background: #cd0046;
 }
 
-.logo {
-	border: 5px  #a0d5d3 solid;
+p{
+	color: black;
+	font-size: 22px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-.col-4 {
-	list-style: none;
-	text-align: center;
-}
-<<<<<<< HEAD
-.dep {
-	text-align: center;
-}
-.col-sm {
-	text-align: center;
-}
-.menu {
-	position: absolute;
-	right: 0px;
-	bottom: 0px;
-=======
 /**/
-/*NAVEGACAO*/
+/*formatação geral*/
+.corpo {	
+	background: #fbfbf5;
+	}
+
+.logo {
+	border: 6px  #a0d5d3 solid;
+}
+
+.sac{
+	position: absolute;
+	right: 200px;
+	top: 500px;
+}
+
+#justificar{
+	text-align: center;
+}
+
+#rodape {
+	margin: 60px;
+}
+/**/
+/*NAV formatação*/
 nav {
 	position: absolute;
 	right: 20px;
@@ -52,27 +50,25 @@ nav li{
 	display: inline;
 	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
 	font-size: 16px;
+	padding: 0.5px;
 }
 
 nav a{
 	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
 	color: #fff;
->>>>>>> parent of f19fbb2... Add files via upload
+	padding: 0.5px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-.menu .link {
-	text-decoration: none;
-<<<<<<< HEAD
-	color: black;	
+
+ul a:hover {
+	color: #894a1f;
+	text-decoration: none;	
 }
-.dest {
-	text-align: center;
+ul #atual{
+	background: url(../img/Navegação/aba-direita-atual.png) no-repeat top right;	
 }
-#rodape {
-	margin-top: 20px;
+
+ul #atual a{
+	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
 }
-.banner {
-	width: 80%;
-}
-=======
-}
->>>>>>> parent of f19fbb2... Add files via upload
+/**/
