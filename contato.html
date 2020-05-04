@@ -3,130 +3,77 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="imagem/png" href="/img/icon.png" />
+        <link rel="icon" type="imagem/png" href="/img/icon.png">
         <title>Lanchonete do Barrigudo</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
     </head>
-    <body align="center">
-        <table border="0" style="width: 80%;*" align="center">
-            <tr>
-                <td>
-                    <a href="index.html">
-                        <img src="./img/4.png" alt="logo do site, barrigudo é como sairá daqui" width="200px" height="86px">
-                    </a>
-                </td>
-                <td align="right">
-                    <a href="lanchonete.html" style="text-decoration:none"><font color=black>Lanchonete do Barrigudo</font></a> |
-                    <a href="premios.html" style="text-decoration:none"><font color=black>Prémios</font></a> |
-                    <a href="contato.html" style="text-decoration:none"><font color=black>Contato</font></a> |
-                    <a href="cardapio.html" style="text-decoration:none"><font color=black>Cardápio</font></a>
-                </td>
-            </tr>
-            <!--BANNER-->
-            <tr>
-                <td colspan="3">
-                    <img src="img/banner.png" alt="banner grande do site barrigudo, com o nome e um lanche do lado e uma moto de entrega do outro" width="100%">
-                </td>
-            </tr>
-        </table>
-        </br>
-        </br>
-        </br>
-        <table border="0" style="width: 80%;*" align="center">
-            <tr>
-                <h1>Contato</h1>
-            </tr>
-            <tr>
-                <td style="width: 50%;">
-                    <strong>Horário de atendimento:</strong>
-                    <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
-                    <p><u>Sabádo</u> das 11:00 até 02:00</p>
-                </td>
-                <td style="width: 50%;">
-                    <strong>Endereço:</strong>
-                    <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
-                </td>
-            </tr>
-        </table>
-        <!--formulario para entrar em contato-->
-        <table border="0" style="width: 80%;*" align="center">
+    <body class="container">
+
+        <div class="corpo">
+<!--BANNER-->
+            <a href="index.html">
+                <img class="logo" src="./img/4.png" alt="logo do site, barrigudo é como sairá daqui" width="200px" height="86px">
+            </a>
+            <a href="lanchonete.html" style="text-decoration:none"><font color=black>Lanchonete do Barrigudo</font></a> |
+            <a href="premios.html" style="text-decoration:none"><font color=black>Prémios</font></a> |
+            <a href="contato.html" style="text-decoration:none"><font color=black>Contato</font></a> |
+            <a href="cardapio.html" style="text-decoration:none"><font color=black>Cardápio</font></a>
+            <img src="img/banner.png" alt="banner grande do site barrigudo, com o nome e um lanche do lado e uma moto de entrega do outro" width="100%">
+
+    <!--formulario para entrar em contato-->    
+            <h1>Contato</h1>
+            <strong>Horário de atendimento:</strong>
+            <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
+            <p><u>Sabádo</u> das 11:00 até 02:00</p>
+            <strong>Endereço:</strong>
+            <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
+
+     <!-- Parte do form de Nome e Email -->
             <form>
-                <tr>
-                    <h3>Dados do Cliente</h3>
-                </tr>
-                <tr align="center"> <!-- Parte do form de Nome e Email -->
-                    <td>    
-                        Nome: <input type="name" name="nome" placeholder="Nome" >
-                    </td>
-                    <td>    
-                        E-mail: <input type="email" name="e-mail" placeholder="E-mail" >
-                    </td>
-                </tr>
-                <!-- Parte do form de Satisfação -->
-                <tr> 
-                    <td>    
-                        Está satisfeito:    
-                        <input type="radio" name="satisfeito" value="Sim">Sim 
-                        <input type="radio" name="satisfeito" value="Não"> Não
-                    </td>
-                </tr>
-                <tr> <!-- Parte do form de Consumidos -->
-                    <td align="right">
-                        Lanches consumidos: </br>
-                    </td>
-                    <td align="left">
-                                <input type="checkbox" name="consumidos" value="Gordo Bacon">Gordo Bacon</br>
-                                <input type="checkbox" name="consumidos" value="Gordo Dieta">Gordo Dieta</br>
-                                <input type="checkbox" name="consumidos" value="Gorduchao">Gorduchao</br>
-                    </td>    
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <p>Mensagem:</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="3">
-                        <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea>
-                    </br>
-                        <input type="submit"  name="botao">
-                    </td>
-                </tr>
+                <h3>Dados do Cliente</h3>
+                Nome: <input type="name" name="nome" placeholder="Nome" >
+                E-mail: <input type="email" name="e-mail" placeholder="E-mail" >
+
+    <!-- Parte do form de Satisfação -->
+                Está satisfeito:    
+                <input type="radio" name="satisfeito" value="Sim">Sim 
+                <input type="radio" name="satisfeito" value="Não"> Não
+
+    <!-- Parte do form de Consumidos -->
+                Lanches consumidos: 
+                <input type="checkbox" name="consumidos" value="Gordo Bacon">Gordo Bacon</br>
+                <input type="checkbox" name="consumidos" value="Gordo Dieta">Gordo Dieta</br>
+                <input type="checkbox" name="consumidos" value="Gorduchao">Gorduchao</br>
+                <p>Mensagem:</p>
+                <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea></br>
+                <input type="submit"  name="botao">
             </form> 
-        </table> 
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        </br>
-        <!--RODAPÉ DA PAGINA-->
-        <table border="0" style="width: 80%;*" align="center">
-            <tr>
-                <td style="width: 33%"> 
-                    <ul style="list-style: none;"><h3>Horário</h3>
-                        <li>Terça a Sexta</li>
-                        <li>13:00H ás 00:00H</li>
-                        <li>Sabádo</li>
-                        <li>11:00H as 02:00H</li>
-                    </ul>
-                </td>
-                <td style="width: 33%">
-                    <ul style="list-style: none;"><h3>Local</h3>
-                        <li>Rua do Lanches, 1001</li>
-                        <li>Centro</li>
-                        <li>Itaperuna - RJ</li>
-                        <li>CEP: 283000-000</li>
-                    </ul>
-                </td>
-                <td style="width: 33%">
-                    <ul style="list-style: none;"><h3>Contato</h3>
-                        <li>Reservas:</li>
-                        <li>(0XX)9 9999-9999</li>
-                        <li>contato@barrigudo.com.br</li>
-                        <li>(0XX) 9999-9999</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
+
+    <!--RODAPÉ DA PAGINA-->
+            <ul style="list-style: none;">
+                <h3>Horário</h3>
+                <li>Terça a Sexta</li>
+                <li>13:00H ás 00:00H</li>
+                <li>Sabádo</li>
+                <li>11:00H as 02:00H</li>
+            </ul>
+
+            <ul style="list-style: none;">
+                <h3>Local</h3>
+                <li>Rua do Lanches, 1001</li>
+                <li>Centro</li>
+                <li>Itaperuna - RJ</li>
+                <li>CEP: 283000-000</li>
+            </ul>
+
+            <ul style="list-style: none;">
+                <h3>Contato</h3>
+                <li>Reservas:</li>
+                <li>(0XX)9 9999-9999</li>
+                <li>contato@barrigudo.com.br</li>
+                <li>(0XX) 9999-9999</li>
+            </ul>
+        </div>
     </body>
 </html>
