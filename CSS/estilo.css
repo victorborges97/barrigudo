@@ -26,6 +26,7 @@ body {
 	list-style: none;
 	text-align: center;
 }
+<<<<<<< HEAD
 .dep {
 	text-align: center;
 }
@@ -36,9 +37,31 @@ body {
 	position: absolute;
 	right: 0px;
 	bottom: 0px;
+=======
+/**/
+/*NAVEGACAO*/
+nav {
+	position: absolute;
+	right: 20px;
+	bottom: -20px;
+}
+
+nav li{
+	list-style: none;
+	width: 700px;
+	display: inline;
+	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
+	font-size: 16px;
+}
+
+nav a{
+	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
+	color: #fff;
+>>>>>>> parent of f19fbb2... Add files via upload
 }
 .menu .link {
 	text-decoration: none;
+<<<<<<< HEAD
 	color: black;	
 }
 .dest {
@@ -50,3 +73,6 @@ body {
 .banner {
 	width: 80%;
 }
+=======
+}
+>>>>>>> parent of f19fbb2... Add files via upload
