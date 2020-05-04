@@ -6,54 +6,125 @@
 
 body {
 	font-size: 1em;
-	font-family:"Trebuchet MS", Helvetica, sans-serif;	
-	background: #cd0046;
+	font-family:"Trebuchet MS", Helvetica, sans-serif; 
+	background: #F8F8FF;
 }
-/**/
-/*formatação geral*/
-.corpo {	
-	background: #fbfbf5;
-	}
+/* 
+******************Layout do site
+*/
+#cabecalho {
+	background-color: #1C1C1C;
+	padding: 15px;
+	text-align: center;
+}
 
-.logo {
-	border: 6px  #a0d5d3 solid;
+#area-logo, #area-menu {
+	padding: 10px;	
 }
 
-#rodape {
-	margin: 60px;
-}
-/**/
-/*NAV formatação*/
-nav {
+.logo{
 	position: absolute;
-	right: 20px;
-	bottom: -20px;
+	top: 50px;
 }
 
-nav li{
-	list-style: none;
-	width: 700px;
-	display: inline;
-	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
-	font-size: 16px;
-	padding: 0.5px;
+h1 {
+	color: #F8F8FF;
+	font-size: 2.5em;
 }
 
-nav a{
-	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
-	color: #fff;
-	padding: 0.5px;
+h2 {
+	padding: 10px;
 }
 
-ul a:hover {
-	color: #894a1f;
+.net {
+	color: #F8F8FF;
+	font-size: 1.4em;
+}
+
+#area-principal{
+	width: 920px;
+	margin: 0 auto;	
+	padding: 15px;
+}
+
+#area-post {
+	width: 730px;
+	float: left;
+	padding: 10px;
+}
+
+.postagem {
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;	
+}
+
+.img{
+	margin:65px;
+}
+
+#area-lateral {
+	width: 90px;
+	float: right;
+	position: fixed;
+	right: 400px; 
+	bottom: 50px; 
+}
+
+#rodape{
+	clear: both;
+	text-align: center;
+	padding: 20px;
+}
+
+/*
+*****************Formatação do menu
+*/
+a {
 	text-decoration: none;
 }
-ul #atual{
-	background: url(../img/Navegação/aba-direita-atual.png) no-repeat top right;	
+
+a:link, a:visited {
+	color: #F8F8FF;
+	padding: 8px 12px;
 }
 
-ul #atual a{
-	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
+a:hover {
+	color: #DCDCDC;
+	background: #808080;
+	padding: 12px;
 }
-/**/
+
+/* FORMULARIO */
+
+fieldset {
+	padding: 1em;
+	border: 1px solid #ccc;
+	margin: 1em 0;
+}
+
+legend{
+	font-weight: bold;
+}
+
+label{
+	display: block;
+	cursor: pointer;	
+}
+
+input{
+	width: 15em;
+}
+
+textarea{
+	width: 20em;
+	height: 5em;
+}
+
+input.radio, input.checkbox, input.submit{
+	width: auto;
+}
+
+.radio {
+	margin-right: 1em;
+}

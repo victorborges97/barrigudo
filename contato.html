@@ -1,96 +1,140 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="imagem/png" href="/img/icon.png">
-        <title>Lanchonete do Barrigudo</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
-    </head>
-    <body class="container">
+<html>
 
-        <div class="corpo">
-<!--BANNER-->
-            <div class="row">
-                <div class="col-md-2">
-                    <a href="index.html">
-                        <img src="./img/4.png" alt="logo do site, barrigudo é como sairá daqui" width="220px">
-                    </a>
-                </div>
-                <div class="col-md-4"></div>
-                <div class="col-md-6">
-                    <nav>
-                        <ul>
-                            <li><a href="lanchonete.html">Lanchonete do Barrigudo</a></li> 
-                            <li><a href="premios.html">Prémios</a></li>
-                            <li id="atual"><a href="contato.html">Contato</a></li> 
-                            <li><a href="cardapio.html">Cardápio</a></li>
-                            <li><a href="">Chefs</a></li>
-                            <li><a href="">Faça seu pedido</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <img class="logo" src="img/banner.png" alt="banner grande do site barrigudo, com o nome e um lanche do lado e uma moto de entrega do outro" width="100%">
-                <div>            
-            </div>
+	<head>
 
-    <!--formulario para entrar em contato-->    
-            <h1>Contato</h1>
-            <strong>Horário de atendimento:</strong>
-            <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
-            <p><u>Sabádo</u> das 11:00 até 02:00</p>
-            <strong>Endereço:</strong>
-            <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
+		<title>Fogo.net</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 
-     <!-- Parte do form de Nome e Email -->
-            <form>
-                <h3>Dados do Cliente</h3>
-                Nome: <input type="name" name="nome" placeholder="Nome" >
-                E-mail: <input type="email" name="e-mail" placeholder="E-mail" >
+	</head>
 
-    <!-- Parte do form de Satisfação -->
-                Está satisfeito:    
-                <input type="radio" name="satisfeito" value="Sim">Sim 
-                <input type="radio" name="satisfeito" value="Não"> Não
+	<body>
 
-    <!-- Parte do form de Consumidos -->
-                Lanches consumidos: 
-                <input type="checkbox" name="consumidos" value="Gordo Bacon">Gordo Bacon</br>
-                <input type="checkbox" name="consumidos" value="Gordo Dieta">Gordo Dieta</br>
-                <input type="checkbox" name="consumidos" value="Gorduchao">Gorduchao</br>
-                <p>Mensagem:</p>
-                <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea></br>
-                <input type="submit"  name="botao">
-            </form> 
+		<!--cabecalho do blog-->
+		<div id="cabecalho">
 
-    <!--RODAPÉ DA PAGINA-->
-            <ul style="list-style: none;">
-                <h3>Horário</h3>
-                <li>Terça a Sexta</li>
-                <li>13:00H ás 00:00H</li>
-                <li>Sabádo</li>
-                <li>11:00H as 02:00H</li>
-            </ul>
+			<div id="area-logo">
+				<h1>Fogo.<span class="net">Net</span></h1>
+			</div>
+			<div id="area-menu">
+				<a href="index.html">Home</a>
+				<a href="titulos.html">Títulos marcantes</a>
+				<a href="idolos.html">Ídolos</a>
+				<a href="jejum.html">Jejum</a>
+				<a href="mascote.html">Mascote</a>
+				<a href="escudo.html">Escudo</a>
+				<a href="contato.html">Fale conosco</a>
+			</div>
 
-            <ul style="list-style: none;">
-                <h3>Local</h3>
-                <li>Rua do Lanches, 1001</li>
-                <li>Centro</li>
-                <li>Itaperuna - RJ</li>
-                <li>CEP: 283000-000</li>
-            </ul>
+		</div>
+		<!--final do cabelaho-->
+		<!--Imagem do escudo-->
+		<div class="logo">
+				<img src="img/logo.png">
+		</div>
+		<!--*****************-->
+		<!--Parte sobre o conteudo da pagina-->
+		<div id="area-principal">
 
-            <ul style="list-style: none;">
-                <h3>Contato</h3>
-                <li>Reservas:</li>
-                <li>(0XX)9 9999-9999</li>
-                <li>contato@barrigudo.com.br</li>
-                <li>(0XX) 9999-9999</li>
-            </ul>
-        </div>
-    </body>
+			<div id="area-post">
+				
+				<div class="postagem"><!--FORMULARIO PARA CONTATO-->
+					<h2>Contato</h2>
+
+						<form>
+							<fieldset>
+								<legend>Detralhes do Contato</legend>
+
+								<div>
+									<label for="nome">Nome:</label>
+									<input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+								</div>
+
+								<div>
+									<label for="email">E-mail:</label>
+									<input type="text" name="nome" id="email" placeholder="Digite o seu e-mail">
+								</div>
+							
+							
+                        		<label for="estado">Estado</label>
+	                        		<select id="estado">
+	                        			<option> </option>
+	                        			<option>AC</option>
+	                        			<option>AL</option>
+	                        			<option>AP</option>
+	                        			<option>AM</option>
+	                        			<option>BA</option>
+	                        			<option>CE</option>
+	                        			<option>DF</option>
+	                        			<option>ES</option>
+	                        			<option>GO</option>
+	                        			<option>MA</option>
+	                        			<option>MT</option>
+	                        			<option>MS</option>
+	                        			<option>MG</option>
+	                        			<option>PA</option>
+	                        			<option>PB</option>
+	                        			<option>PR</option>
+	                        			<option>PE</option>
+	                        			<option>PI</option>
+	                        			<option>RJ</option>
+	                        			<option>RN</option>
+	                        			<option>RS</option>
+	                        			<option>RO</option>
+	                        			<option>RR</option>
+	                        			<option>SC</option>
+	                        			<option>SP</option>
+	                        			<option>SE</option>
+	                        			<option>TO</option>
+	                        		</select>
+	                    	</fieldset>
+
+	                    	<fieldset>
+
+	                    		<legend>Comentários</legend>
+
+	                    		<div>
+	                    			<label for="mensagem">Mensagem:</label>
+	                    			<textarea name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+	                    		</div>
+
+	                    		<label>Está satisfeito ?</label>
+
+	                    		<div>
+	                    			<label>
+	                    				<input class="radio" type="radio" name="satisfeito" id="sim">Sim
+	                    			</label>	
+	                    		</div>
+
+	                    		<div>
+	                    				<label>
+	                    					<input class="radio" type="radio" name="satisfeito" id="nao">Não
+	                    				</label>	
+	                    		</div>
+
+	                    	</fieldset>
+
+	                    	<div align="center">
+	                    		<input type="submit" value="Enviar">
+	                    	</div>
+
+	                    </form>
+
+				</div><!--FIM DO FORMULARIO PARA CONTATO-->
+			</div>
+
+			<div id="area-lateral">
+				<img src="img/Loco.png">
+			</div>
+			<!--FIM DO CONTEUDO DA PAG-->
+			<!--rodape-->
+			<div id="rodape">
+				Todos os direitos reservados
+			</div>
+			<!--rodape fim-->
+		</div>
+
+	</body>
+
 </html>
