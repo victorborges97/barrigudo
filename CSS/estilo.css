@@ -3,40 +3,27 @@
 	margin: 0;
 	padding: 0;
 }
-
 body {	
 	background: #cd0046;
 }
-
 p{
 	color: black;
 	font-size: 22px;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-/**/
-/*formatação geral*/
 .corpo {	
 	background: #fbfbf5;
-	}
-
-.logo {
-	border: 6px  #a0d5d3 solid;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-
-.sac{
-	position: absolute;
-	right: 200px;
-	top: 500px;
-}
-
 #justificar{
 	text-align: center;
 }
 
-#rodape {
-	margin: 60px;
-}
+
 /**/
+
+	/*CSS INICIO PAG INDEX*/
+
 /*NAV formatação*/
 nav {
 	position: absolute;
@@ -52,14 +39,12 @@ nav li{
 	font-size: 16px;
 	padding: 0.5px;
 }
-
 nav a{
 	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
 	color: #fff;
 	padding: 0.5px;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
-
 ul a:hover {
 	color: #894a1f;
 	text-decoration: none;	
@@ -67,8 +52,153 @@ ul a:hover {
 ul #atual{
 	background: url(../img/Navegação/aba-direita-atual.png) no-repeat top right;	
 }
-
 ul #atual a{
 	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
 }
-/**/
+/*CSS DA LOGO PAG INDEX*/
+.logo {
+	margin-bottom: 30px;
+	border: 6px  #a0d5d3 solid;
+}
+
+/*CSS DA BREVE HISTORIA PAG INDEX*/
+#textlanchonete {
+	text-align: center;
+}
+
+/*CSS DA PREVIA DE CARDAPIO PAG INDEX*/
+#lan {
+	margin: 10px;
+	align-items: center;
+}
+#lan-text-name {
+	text-align: center;
+}
+.lan-text-photo {
+	text-align: center; /*CENTRALIZAR IMAGENS AQUI NAO DEU COMO NA PAGINA LANCHONETE EM GALERIA */
+}
+#textLanches {
+	text-align: center;
+	padding: 10px;
+}
+
+/*CSS DOS DEPOIMENTOS DE CLIENTES PAG INDEX*/
+#depclientes {
+	margin: 20px;
+	text-align: center;
+}
+#dep {
+	margin: 10px;
+	align-items: center;
+}
+#dep-text-name {
+	text-align: center;
+}
+#dep-text-coment {
+	text-align: center;
+}
+
+/*CSS DO RODAPÉ*/
+#rodape {
+	margin: 20px;
+	align-items: center;
+}
+#rod-ul {
+	list-style: none;
+}
+#rod-ul-h3 {
+	text-align: center;
+}
+#rod-ul-li {
+	text-align: center;
+}
+hr {
+	border: 0;
+	border-top: 3px solid #000;
+}
+
+	/*CSS FIM PAG INDEX*/
+
+	/*CSS INICIO PAG LANCHONETE*/
+
+/*CSS TEXTO DA HISTORIA*/
+#texto-pag {
+	text-align: center;
+	margin: 20px;
+}
+
+/*CSS DA GALERIA*/
+.galeria-photos {
+	text-align: center;
+}
+
+
+	/*CSS FIM PAG LANCHONETE*/
+
+	/*CSS INICIO PAG PREMIOS*/
+
+
+
+/*COMEÇA AQUI*/
+
+
+
+	/*CSS FIM PAG PREMIOS*/
+
+	/*CSS INICIO PAG CONTATO*/
+
+/*CSS DO TEXT CONTATO*/
+#pag-contato {
+	text-align: center;
+}
+#pag-text-center {
+	text-align: center;
+}
+
+/*CSS DA IMG FORMULARIO*/
+.sac{
+	position: absolute;
+	right: 100px;
+	top: 500px;
+}
+
+/*CSS DO FORM*/
+#form {
+	padding: 40px;
+	align-items: center;
+	justify-content: center;
+}
+
+
+	/*CSS FIM PAG CONTATO*/
+
+	/*CSS INICIO PAG CARDAPIO*/
+
+
+
+/*COMEÇA AQUI*/
+
+
+
+	/*CSS FIM PAG CARDAPIO*/
+
+	/*CSS INICIO PAG CHEFS*/
+
+
+
+/*COMEÇA AQUI*/
+
+
+
+	/*CSS FIM PAG CHEFS*/
+
+	/*CSS INICIO PAG PEDIDOS*/
+
+
+
+/*COMEÇA AQUI*/
+
+
+
+	/*CSS FIM PAG PEDIDOS*/
+

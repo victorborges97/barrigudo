@@ -9,8 +9,8 @@
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
     </head>
     <body class="container">
-
-        <div style="font-family: "Lucida Console", Courier, monospace" class="corpo">
+       
+        <div class="corpo">
 <!--BANNER-->
             <div class="row">
                 <div class="col-md-2">
@@ -24,10 +24,10 @@
                         <ul>
                             <li><a href="lanchonete.html">Lanchonete do Barrigudo</a></li> 
                             <li><a href="premios.html">Prémios</a></li>
-                            <li id="atual"><a href="contato.html">Contato</a></li> 
+                            <li><a href="contato.html">Contato</a></li> 
                             <li><a href="cardapio.html">Cardápio</a></li>
-                            <li><a href="">Chefs</a></li>
-                            <li><a href="">Faça seu pedido</a></li>
+                            <li><a href="chefs.html">Chefs</a></li>
+                            <li><a href="pedido.html">Faça seu pedido</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -39,17 +39,17 @@
             </div>
 
 <!--formulario para entrar em contato-->              
-            <h1 align="center">Contato</h1>
+            <h2 id="pag-contato">Contato</h2>
 
             <div class="row">
-                <div class="col-md-12" align="center">
-                    <h3>Horário de atendimento:</h3>
+                <div class="col-md-12">
+                    <h3 id="pag-text-center">Horário de atendimento:</h3>
                 </div>
             </div>    
             <div class="row">
-                <div class="col-md-12" align="center">
-                    <p><u>Terça a sexta</u> das 13:00 até 00:00</p>
-                    <p><u>Sabádo</u> das 11:00 até 02:00</p>
+                <div class="col-md-12">
+                    <p id="pag-text-center"><u>Terça a sexta</u> das 13:00 até 00:00</p>
+                    <p id="pag-text-center"><u>Sabádo</u> das 11:00 até 02:00</p>
                 </div>
             </div>
             <div class="row">
@@ -60,7 +60,7 @@
             </div>
 
 <!-- Parte do form de Nome e Email -->
-            <form style="padding: 40px">
+            <form id="form">
                 <h3>Dados do Cliente</h3>
                 <div class="row">
                     <div class="col-md-12">
@@ -82,9 +82,9 @@
                 <strong>Lanches consumidos:</strong>
                 <div class="row"> 
                     <div class="col-md-5">
-                        <input type="checkbox" name="consumidos" value="Gordo Bacon">Gordo Bacon</br>
-                        <input type="checkbox" name="consumidos" value="Gordo Dieta">Gordo Dieta</br>
-                        <input type="checkbox" name="consumidos" value="Gorduchao">Gorduchao</br>   
+                        <input type="checkbox" name="consumidos" value="Gordo Bacon"> Gordo Bacon |
+                        <input type="checkbox" name="consumidos" value="Gordo Dieta"> Gordo Dieta |
+                        <input type="checkbox" name="consumidos" value="Gorduchao"> Gorduchao
                     </div>
                 </div>
                 <strong>Mensagem:</strong> 
@@ -103,30 +103,33 @@
                 </div>
             </div>
 
-<!--RODAPÉ DA PAGINA-->
+<!--LINHA-->   
+            <hr>
+
+<!--RODAPÉ DA PAGINA-->                     
             <footer class="row" id="rodape">
-                <ul class="col-md-4" style="list-style: none;">
-                    <h3>Horário</h3>
-                    <li>Terça a Sexta</li>
-                    <li>13:00H ás 00:00H</li>
-                    <li>Sabádo</li>
-                    <li>11:00H as 02:00H</li>
+                <ul class="col-md-4" id="rod-ul">
+                    <h3 id="rod-ul-h3">Horário</h3>
+                    <li id="rod-ul-li">Terça a Sexta</li>
+                    <li id="rod-ul-li">13:00H ás 00:00H</li>
+                    <li id="rod-ul-li">Sabádo</li>
+                    <li id="rod-ul-li">11:00H as 02:00H</li>
                 </ul>
 
-                <ul class="col-md-4" style="list-style: none;">
-                    <h3>Local</h3>
-                    <li>Rua do Lanches, 1001</li>
-                    <li>Centro</li>
-                    <li>Itaperuna - RJ</li>
-                    <li>CEP: 283000-000</li>
+                <ul class="col-md-4" id="rod-ul">
+                    <h3 id="rod-ul-h3">Local</h3>
+                    <li id="rod-ul-li">Rua do Lanches, 1001</li>
+                    <li id="rod-ul-li">Centro</li>
+                    <li id="rod-ul-li">Itaperuna - RJ</li>
+                    <li id="rod-ul-li">CEP: 283000-000</li>
                 </ul>
 
-                <ul class="col-md-4" style="list-style: none;">
-                    <h3>Contato</h3>
-                    <li>Reservas:</li>
-                    <li>(0XX)9 9999-9999</li>
-                    <li>contato@barrigudo.com.br</li>
-                    <li>(0XX) 9999-9999</li>
+                <ul class="col-md-4" id="rod-ul">
+                    <h3 id="rod-ul-h3">Contato</h3>
+                    <li id="rod-ul-li">Reservas:</li>
+                    <li id="rod-ul-li">(0XX)9 9999-9999</li>
+                    <li id="rod-ul-li">contato@barrigudo.com.br</li>
+                    <li id="rod-ul-li">(0XX) 9999-9999</li>
                 </ul>
             </footer>
         </div>
