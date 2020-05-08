@@ -54,7 +54,7 @@ ul #atual a{
 /*CSS DA LOGO PAG INDEX*/
 .logo {
 	margin-bottom: 30px;
-	border: 6px  #a0d5d3 solid;
+
 }
 
 /*CSS DA BREVE HISTORIA PAG INDEX*/
@@ -63,19 +63,18 @@ ul #atual a{
 }
 
 /*CSS DA PREVIA DE CARDAPIO PAG INDEX*/
-#lan {
-	margin: 10px;
+#cardapio {
+	display: flex;
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
 }
-#lan-text-name {
-	text-align: center;
-}
-.lan-text-photo {
-	text-align: center; /*CENTRALIZAR IMAGENS AQUI NAO DEU COMO NA PAGINA LANCHONETE EM GALERIA */
+.cardapio {
+	margin: 70px;
 }
 #textLanches {
 	text-align: center;
-	padding: 10px;
+	margin-top: 10px;
 }
 
 /*CSS DOS DEPOIMENTOS DE CLIENTES PAG INDEX*/
