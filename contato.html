@@ -7,6 +7,11 @@
         <title>Lanchonete do Barrigudo</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+        <style type="text/css">
+            #font{
+                font-family: "Lucida Console", Courier, monospace;
+            }
+        </style>
     </head>
     <body class="container">
        
@@ -24,7 +29,7 @@
                         <ul>
                             <li><a href="lanchonete.html">Lanchonete do Barrigudo</a></li> 
                             <li><a href="premios.html">Prémios</a></li>
-                            <li  id="atual"><a href="contato.html">Contato</a></li> 
+                            <li id="atual"><a href="contato.html">Contato</a></li> 
                             <li><a href="cardapio.html">Cardápio</a></li>
                             <li><a href="chefs.html">Chefs</a></li>
                             <li><a href="pedido.html">Faça seu pedido</a></li>
@@ -38,68 +43,70 @@
                 <div>            
             </div>
 
-<!--formulario para entrar em contato-->              
-            <h2 id="pag-contato">Contato</h2>
+<!--formulario para entrar em contato-->
+            <div id="font">              
+                <h2 id="pag-contato">Contato</h2>
 
-            <div class="row">
-                <div class="col-md-12">
-                    <h3 id="pag-text-center">Horário de atendimento:</h3>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 id="pag-text-center">Horário de atendimento:</h3>
+                    </div>
+                </div>    
+                <div class="row">
+                    <div class="col-md-12">
+                        <p id="pag-text-center"><u>Terça a sexta</u> das 13:00 até 00:00</p>
+                        <p id="pag-text-center"><u>Sabádo</u> das 11:00 até 02:00</p>
+                    </div>
                 </div>
-            </div>    
-            <div class="row">
-                <div class="col-md-12">
-                    <p id="pag-text-center"><u>Terça a sexta</u> das 13:00 até 00:00</p>
-                    <p id="pag-text-center"><u>Sabádo</u> das 11:00 até 02:00</p>
+                <div class="row">
+                    <div class="col-md-12" align="center">
+                        <strong>Endereço:</strong>
+                        <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12" align="center">
-                    <strong>Endereço:</strong>
-                    <a href="https://www.google.com/maps/place/Shop+do+P%C3%A3o/@-21.2044694,-41.8911215,19z/data=!4m19!1m13!4m12!1m4!2m2!1d-41.8898692!2d-21.1944359!4e1!1m6!1m2!1s0xbc60685cec094b:0xa057410eb5dd0182!2sCorreios+-+Av.+Cardoso+Moreira,+534+-+Centro,+Itaperuna+-+RJ,+28300-000!2m2!1d-41.8895816!2d-21.2054094!3m4!1s0x0:0xdd8d09ec6d6c16d1!8m2!3d-21.2047104!4d-41.8902655">Av. Cardoso Moreira, 640 - Centro, Itaperuna - RJ, 28300-000</a>
-                </div>
-            </div>
 
 <!-- Parte do form de Nome e Email -->
-            <form id="form">
-                <h3>Dados do Cliente</h3>
-                <div class="row">
-                    <div class="col-md-12">
-                        <strong>Nome:</strong><input type="name" name="nome" placeholder="Nome" >
-                        <strong>E-mail:</strong><input type="email" name="e-mail" placeholder="E-mail" >
+                <form id="form">
+                    <h3>Dados do Cliente</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong>Nome:</strong><input type="name" name="nome" placeholder="Nome" >
+                            <strong>E-mail:</strong><input type="email" name="e-mail" placeholder="E-mail" >
+                        </div>
                     </div>
-                </div>
 
 <!-- Parte do form de Satisfação -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <strong>Está satisfeito:</strong>
-                        <input type="radio" name="satisfeito" value="Sim">Sim 
-                        <input type="radio" name="satisfeito" value="Não"> Não
+                    <div class="row">
+                        <div class="col-md-12">
+                            <strong>Está satisfeito:</strong>
+                            <input type="radio" name="satisfeito" value="Sim">Sim 
+                            <input type="radio" name="satisfeito" value="Não"> Não
+                        </div>
                     </div>
-                </div>
 
 <!-- Parte do form de Consumidos -->
-                <strong>Lanches consumidos:</strong>
-                <div class="row"> 
-                    <div class="col-md-5">
-                        <input type="checkbox" name="consumidos" value="Gordo Bacon"> Gordo Bacon |
-                        <input type="checkbox" name="consumidos" value="Gordo Dieta"> Gordo Dieta |
-                        <input type="checkbox" name="consumidos" value="Gorduchao"> Gorduchao
+                    <strong>Lanches consumidos:</strong>
+                    <div class="row"> 
+                        <div class="col-md-12">
+                            <input type="checkbox" name="consumidos" value="Gordo Bacon"> Gordo Bacon |
+                            <input type="checkbox" name="consumidos" value="Gordo Dieta"> Gordo Dieta |
+                            <input type="checkbox" name="consumidos" value="Gorduchao"> Gorduchao
+                        </div>
                     </div>
-                </div>
-                <strong>Mensagem:</strong> 
-                <div>
-                    <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea></br>                    
-                </div>
-                <div class="row">
-                    <div class="col-md-6" align="center">
-                        <input style="width: 15em" align="center" type="submit"  name="botao">
+                    <strong>Mensagem:</strong> 
+                    <div>
+                        <textarea name="mensagem" placeholder="Diga para nós o que gostou !" style="width: 500px; height: 100px;"></textarea></br>                    
                     </div>
-                </div>
-            </form>
-            <div class="sac" class="row">
-                <div class="col-md-10">
-                    <img src="img/sac.png">
+                    <div class="row">
+                        <div class="col-md-6" align="center">
+                            <input style="width: 15em" align="center" type="submit"  name="botao">
+                        </div>
+                    </div>
+                </form>
+                <div class="sac" class="row">
+                    <div class="col-md-10">
+                        <img src="img/sac.png">
+                    </div>
                 </div>
             </div>
 
