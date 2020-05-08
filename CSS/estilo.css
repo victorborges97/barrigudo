@@ -33,22 +33,22 @@ nav {
 
 nav li{
 	list-style: none;
-	width: 700px;
 	display: inline;
 	background: url(../img/Navegação/aba-direita.png) no-repeat top right;				
 	font-size: 16px;
-	padding: 0.5px;
 }
+
 nav a{
 	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
 	color: #fff;
-	padding: 0.5px;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
+
 ul a:hover {
 	color: #894a1f;
 	text-decoration: none;	
 }
+
 ul #atual{
 	background: url(../img/Navegação/aba-direita-atual.png) no-repeat top right;	
 }
