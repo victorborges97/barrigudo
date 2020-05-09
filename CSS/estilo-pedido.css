@@ -63,10 +63,25 @@ ul #atual a{
 	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
 }
 
-/*CSS DA LOGO PAG INDEX*/
 .logo {
 	margin-bottom: 30px;
 	border: 6px  #a0d5d3 solid;
+}
+.lanches {
+	text-align: center;
+}
+.pedido4 {
+	text-align: center;
+}
+.button {
+	text-align: center;
+	width: 15em;
+	margin-top: 10px;	
+}
+.button-sub {
+	align-items: center;
+	width: 15em;
+	margin-top: 30px;
 }
 
 /*CSS DO RODAPÉ*/
