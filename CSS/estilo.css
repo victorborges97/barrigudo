@@ -15,6 +15,7 @@ p{
 .corpo {	
 	background: #fbfbf5;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	
 }
 
 img {
@@ -25,10 +26,13 @@ img {
 	text-align: center;
 }
 /**/
-
 	/*CSS INICIO PAG INDEX*/
 
 /*NAV formatação*/
+#navbarNav {
+	position: absolute;
+	right: 28px;
+}
 nav {
 	position: absolute;
 	right: 20px;
@@ -47,6 +51,10 @@ nav a{
 	color: #fff;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
+.banner {
+	margin-top: 30px;
+
+}
 
 ul a:hover {
 	color: #894a1f;
@@ -62,7 +70,7 @@ ul #atual a{
 /*CSS DA LOGO PAG INDEX*/
 .logo {
 	margin-bottom: 30px;
-	/*border: 6px  #a0d5d3 solid;*/
+	border: 6px  #a0d5d3 solid;*/
 }
 
 /*CSS DA BREVE HISTORIA PAG INDEX*/
