@@ -170,25 +170,27 @@ hr {
 }
 
 
-	/*CSS FIM PAG CONTATO*/
-
-	/*CSS INICIO PAG CARDAPIO*/
-
-
-
-/*COMEÇA AQUI*/
-
-
-
 	/*CSS FIM PAG CARDAPIO*/
 
 	/*CSS INICIO PAG CHEFS*/
 
+.chef-fundo{
+	background: #DEB887;
+}
 
+.text-chef1{
+	 font-size: 50px;
+	 font-family: "Times New Roman", sans-serif;
+	 color: #fbfbf5;
+	 font-style: oblique;
+}
 
-/*COMEÇA AQUI*/
-
-
+.text-chef2{
+	font-size: 50px;
+	 font-family: "Times New Roman", sans-serif;
+	 color: #DEB887;
+	 font-style: oblique;
+}
 
 	/*CSS FIM PAG CHEFS*/
 
