@@ -17,12 +17,14 @@ p{
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 	
 }
-
+img{
+	width: 100%;
+}
 .justiﬁcar{
 	text-align: center;
 }
 /**/
-	/*CSS INICIO PAG INDEX*/
+	
 
 /*NAV formatação*/
 #navbarNav {
@@ -102,13 +104,4 @@ hr {
 	border: 0;
 	border-top: 3px solid #000;
 }
-	/*CSS INICIO PAG PEDIDOS*/
-
-
-
-/*COMEÇA AQUI*/
-
-
-
-	/*CSS FIM PAG PEDIDOS*/
 

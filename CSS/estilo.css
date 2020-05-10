@@ -129,9 +129,6 @@ hr {
 	border-top: 3px solid #000;
 }
 
-	/*CSS FIM PAG INDEX*/
-
-	/*CSS INICIO PAG LANCHONETE*/
 
 /*CSS TEXTO DA HISTORIA*/
 #texto-pag {
@@ -144,20 +141,6 @@ hr {
 	text-align: center;
 }
 
-
-	/*CSS FIM PAG LANCHONETE*/
-
-	/*CSS INICIO PAG PREMIOS*/
-
-
-
-/*COMEÇA AQUI*/
-
-
-
-	/*CSS FIM PAG PREMIOS*/
-
-	/*CSS INICIO PAG CONTATO*/
 
 /*CSS DO TEXT CONTATO*/
 #pag-contato {
@@ -182,8 +165,6 @@ hr {
 }
 
 
-	/*CSS FIM PAG CARDAPIO*/
-
 	/*CSS INICIO PAG CHEFS*/
 
 .chef-fundo{
@@ -204,15 +185,8 @@ hr {
 	 font-style: oblique;
 }
 
-	/*CSS FIM PAG CHEFS*/
-
-	/*CSS INICIO PAG PEDIDOS*/
 
 
 
-/*COMEÇA AQUI*/
 
-
-
-	/*CSS FIM PAG PEDIDOS*/
 
