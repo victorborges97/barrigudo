@@ -92,38 +92,6 @@ ul #atual a{
 	border: 6px  #a0d5d3 solid;
 }
 
-/*CSS DA PREVIA DE CARDAPIO PAG INDEX*/
-#lan {
-	margin: 10px;
-	align-items: center;
-}
-#lan-text-name {
-	text-align: center;
-}
-.lan-text-photo {
-	text-align: center; /*CENTRALIZAR IMAGENS AQUI NAO DEU COMO NA PAGINA LANCHONETE EM GALERIA */
-}
-#textLanches {
-	text-align: center;
-	padding: 10px;
-}
-
-/*CSS DOS DEPOIMENTOS DE CLIENTES PAG INDEX*/
-#depclientes {
-	margin: 20px;
-	text-align: center;
-}
-#dep {
-	margin: 10px;
-	align-items: center;
-}
-#dep-text-name {
-	text-align: center;
-}
-#dep-text-coment {
-	text-align: center;
-}
-
 /*CSS DO RODAPÉ*/
 #rodape {
 	margin: 30px;
@@ -143,41 +111,24 @@ hr {
 	border-top: 3px solid #000;
 }
 
-/*CSS TEXTO DA HISTORIA*/
-#texto-pag {
-	text-align: center;
-	margin: 20px;
-}
-
-/*CSS DA GALERIA*/
-.galeria-photos {
+/*CSS CONTATO*/
+.pag-contato {
 	text-align: center;
 }
 
-
-/*CSS DO TEXT CONTATO*/
-#pag-contato {
-	text-align: center;
-}
-#pag-text-center {
-	text-align: center;
-}
-
-/*CSS DA IMG FORMULARIO*/
 .sac{
 	position: absolute;
 	right: 100px;
 	top: 500px;
 }
 
-/*CSS DO FORM*/
 #form {
-	padding: 40px;
+	padding: 50px;
 	align-items: center;
 	justify-content: center;
 }
 
-/*CSS INICIO PAG CHEFS*/
+/*CSS PAG CHEFS*/
 .chef-fundo{
 	background: #DEB887;
 }
@@ -197,7 +148,7 @@ hr {
 }
 
 
-/*CSS INICIO PAG PEDIDO*/
+/*CSS PAG PEDIDO*/
 .logo {
 	margin-bottom: 30px;
 	border: 6px  #a0d5d3 solid;
