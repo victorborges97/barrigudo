@@ -3,15 +3,18 @@
 	margin: 0;
 	padding: 0;
 }
+
 body {	
 	background: #cd0046;
 }
+
 p{
 	color: #000000;
 	font-size: 22px;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
-	text-align: center;
+	text-align: justify;
 }
+
 .corpo {	
 	background: #fbfbf5;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
@@ -22,9 +25,6 @@ img {
 	width: 100%;
 }
 
-.justiﬁcar{
-	text-align: center;
-}
 @media (min-width: 992px){
 	.card{
 		width: 25%;
@@ -47,10 +47,6 @@ img {
 		
 	}
 }
-
-
-/**/
-	/*CSS INICIO PAG INDEX*/
 
 /*NAV formatação*/
 #navbarNav {
@@ -94,11 +90,6 @@ ul #atual a{
 .logo {
 	margin-bottom: 30px;
 	border: 6px  #a0d5d3 solid;
-}
-
-/*CSS DA BREVE HISTORIA PAG INDEX*/
-#textlanchonete {
-	text-align: center;
 }
 
 /*CSS DA PREVIA DE CARDAPIO PAG INDEX*/
@@ -152,7 +143,6 @@ hr {
 	border-top: 3px solid #000;
 }
 
-
 /*CSS TEXTO DA HISTORIA*/
 #texto-pag {
 	text-align: center;
@@ -187,9 +177,7 @@ hr {
 	justify-content: center;
 }
 
-
-	/*CSS INICIO PAG CHEFS*/
-
+/*CSS INICIO PAG CHEFS*/
 .chef-fundo{
 	background: #DEB887;
 }
@@ -209,8 +197,7 @@ hr {
 }
 
 
-	/*CSS INICIO PAG PEDIDO*/
-
+/*CSS INICIO PAG PEDIDO*/
 .logo {
 	margin-bottom: 30px;
 	border: 6px  #a0d5d3 solid;
