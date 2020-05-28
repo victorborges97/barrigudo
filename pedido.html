@@ -6,7 +6,7 @@
         <link rel="icon" type="imagem/png" href="/img/icon.png">
         <title>Lanchonete do Barrigudo</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="CSS/estilo-pedido.css">
+        <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
     </head>
     <body class="container">
        
@@ -53,81 +53,102 @@
             <div class="dropdown">
                 <form method="post">
                     <div class="row lanches">
-                        <div class="col-md-3">
-                            <img src="./img/pedido/1.png" alt="Opção de lance: Gordo Bacon">
-                            <p>Tamanho do Lanche:</p>
-                            <select class="form-control selectpicker" name="tamanho">
-                                <option value="duplo">Simples</option>
-                                <option value="duplo">Duplo</option>
-                                <option value="triplo">Triplo</option>
-                            </select>
-                            <p>Quantidade:</p>
-                            <select class="form-control selectpicker" name="quantidade">
-                                <option value="1">Um</option>
-                                <option value="2">Dois</option>
-                                <option value="3">Três</option>
-                                <option value="4">Quatro</option>
-                                <option value="5">Cinco</option>
-                            </select>
-                            <input class="button" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/pedido/1.png" alt="Opção de lance: Gordo Bacon">
+                            <div class="card-body">
+                                <div class="div-cards">
+                                    <p>Tamanho do Lanche:</p>
+                                    <select id="valor-l" class="form-control">
+                                        <option value="14,90">Simples - 14,90</option>
+                                        <option value="17,00">Duplo - 17,00</option>
+                                        <option value="23,00">Triplo - 23,00</option>
+                                    </select>
+                                </div>
+                                <div class="div-cards">
+                                    <p>Quantidade:</p>
+                                    <input id="quantidade-l" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                </div>
+                                <div class="div-cards">    
+                                    <p>Valor a pagar:</p>
+                                    <fieldset disabled class="input-disabled">
+                                        <input id="valor-total-1" class="form-control" type="number" placeholder="0,00">
+                                    </fieldset>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="./img/pedido/2.png" alt="Opção de lance: Gordo Dieta">
-                            <p>Tamanho do Lanche:</p>
-                            <select class="form-control selectpicker" name="tamanho">
-                                <option value="duplo">Simples</option>
-                                <option value="duplo">Duplo</option>
-                                <option value="triplo">Triplo</option>
-                            </select>
-                            <p>Quantidade:</p>
-                            <select class="form-control selectpicker" name="quantidade">
-                                <option value="1">Um</option>
-                                <option value="2">Dois</option>
-                                <option value="3">Três</option>
-                                <option value="4">Quatro</option>
-                                <option value="5">Cinco</option>
-                            </select>
-                            <input class="button" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/pedido/2.png" alt="Opção de lance: Gordo Dieta">
+                            <div class="card-body">
+                                <div class="div-cards">
+                                    <p>Tamanho do Lanche:</p>
+                                    <select id="valor-2" class="form-control">
+                                        <option value="14,90">Simples - 14,90</option>
+                                        <option value="17,00">Duplo - 17,00</option>
+                                        <option value="23,00">Triplo - 23,00</option>
+                                    </select>
+                                </div>
+                                <div class="div-cards">
+                                    <p>Quantidade:</p>
+                                    <input id="quantidade-2" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                </div>
+                                <div class="div-cards">    
+                                    <p>Valor a pagar:</p>
+                                    <fieldset disabled class="input-disabled">
+                                        <input id="valor-total-2" class="form-control" type="number" placeholder="0,00">
+                                    </fieldset>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="./img/pedido/3.png" alt="Opção de lance: Gorduchão">
-                            <p>Tamanho do Lanche:</p>
-                            <select class="form-control selectpicker" name="tamanho">
-                                <option value="duplo">Simples</option>
-                                <option value="duplo">Duplo</option>
-                                <option value="triplo">Triplo</option>
-                            </select>
-                            <p>Quantidade:</p>
-                            <select class="form-control selectpicker" name="quantidade">
-                                <option value="1">Um</option>
-                                <option value="2">Dois</option>
-                                <option value="3">Três</option>
-                                <option value="4">Quatro</option>
-                                <option value="5">Cinco</option>
-                            </select>
-                            <input class="button" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                        <div class="card" class="col-sm-3">
+                            <img class="card-img-top" src="./img/pedido/3.png" alt="Opção de lance: Gorduchão">
+                            <div class="card-body">
+                                <div class="div-cards">
+                                    <p>Tamanho do Lanche:</p>
+                                    <select id="valor-3" class="form-control">
+                                        <option value="14,90">Simples - 14,90</option>
+                                        <option value="17,00">Duplo - 17,00</option>
+                                        <option value="23,00">Triplo - 23,00</option>
+                                    </select>
+                                </div>
+                                <div class="div-cards">
+                                    <p>Quantidade:</p>
+                                    <input id="quantidade-3" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                </div>
+                                <div class="div-cards">    
+                                    <p>Valor a pagar:</p>
+                                    <fieldset disabled class="input-disabled">
+                                        <input id="valor-total-3" class="form-control" type="number" placeholder="0,00">
+                                    </fieldset>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="./img/pedido/4.jpg" alt="Opção de lance: Especial">
-                            <p>Tamanho do Lanche:</p>
-                            <select class="form-control selectpicker" name="tamanho">
-                                <option value="duplo">Simples</option>
-                                <option value="duplo">Duplo</option>
-                                <option value="triplo">Triplo</option>
-                            </select>
-                            <p>Quantidade:</p>
-                            <select class="form-control selectpicker" name="quantidade">
-                                <option value="1">Um</option>
-                                <option value="2">Dois</option>
-                                <option value="3">Três</option>
-                                <option value="4">Quatro</option>
-                                <option value="5">Cinco</option>
-                            </select>
-                            <input class="button" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                        <div class="card" class="col-sm-3">
+                            <img class="card-img-top" src="./img/pedido/4.jpg" alt="Opção de lance: Especial">
+                            <div class="card-body">
+                                <div class="div-cards">
+                                    <p>Tamanho do Lanche:</p>
+                                    <select id="valor-4" class="form-control">
+                                        <option value="14,90">Simples - 14,90</option>
+                                        <option value="17,00">Duplo - 17,00</option>
+                                        <option value="23,00">Triplo - 23,00</option>
+                                    </select>
+                                </div>
+                                <div class="div-cards">
+                                    <p>Quantidade:</p>
+                                    <input id="quantidade-4" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                </div>
+                                <div class="div-cards">    
+                                    <p>Valor a pagar:</p>
+                                    <fieldset disabled class="input-disabled">
+                                        <input id="valor-total-4" class="form-control" type="number" placeholder="0,00">
+                                    </fieldset>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="button-sub container">
-                        <input class="col-md-12" class="button-submit" type="submit" name="finalizar-compra" value="Finalizar Compra">
                     </div>
                 </form>
             </div>

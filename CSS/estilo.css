@@ -35,7 +35,7 @@ img {
 }
 nav {
 	position: absolute;
-	right: 20px;
+	right: auto;
 	bottom: -20px;
 }
 
@@ -46,17 +46,16 @@ nav li{
 	font-size: 16px;
 }
 
-nav a{
-	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;	
+div ul li a{
+	background: url(../img/Navegação/aba-esquerda.png) no-repeat top left;
 	color: #fff;
 	font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 .banner {
 	margin-top: 30px;
-
 }
 
-ul a:hover {
+ul li a:hover {
 	color: #894a1f;
 	text-decoration: none;	
 }
@@ -67,7 +66,7 @@ ul #atual{
 ul #atual a{
 	background: url(../img/Navegação/aba-esquerda-atual.png) no-repeat top left;	
 }
-/*CSS DA LOGO PAG INDEX*/
+
 .logo {
 	margin-bottom: 30px;
 	border: 6px  #a0d5d3 solid;
@@ -186,7 +185,22 @@ hr {
 }
 
 
+	/*CSS INICIO PAG PEDIDO*/
 
-
-
-
+.logo {
+	margin-bottom: 30px;
+	border: 6px  #a0d5d3 solid;
+}
+.lanches {
+	text-align: center;
+}
+.card{
+	width: 25%;
+}
+.btn {
+	width: 100%;
+	margin-top: 15px;
+}
+.div-cards {
+	margin-top: 5px;
+}
