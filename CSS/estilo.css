@@ -25,6 +25,27 @@ img {
 .justiﬁcar{
 	text-align: center;
 }
+@media (max-width: 990px){
+	.navbar-toggler {
+		position: absolute;
+		top:-80px;
+		right: 15px;
+	}
+	.card{
+		flex-wrap: wrap;
+
+	}
+	.lanches{
+		justify-content: center;
+		align-items: center;
+	}
+}
+@media (min-width: 992px){
+	.card{
+		width: 25%;
+	}
+}
+
 /**/
 	/*CSS INICIO PAG INDEX*/
 
@@ -193,9 +214,6 @@ hr {
 }
 .lanches {
 	text-align: center;
-}
-.card{
-	width: 25%;
 }
 .btn {
 	width: 100%;
