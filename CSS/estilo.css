@@ -166,3 +166,25 @@ hr {
 .lanches {
 	padding: 20px;
 }
+
+/*Carrinho*/
+
+.carrinho{
+	background: #fbfbf5;
+	width: 250px;
+	padding: 10px;
+	height: 300px;
+	position: fixed;
+	right: 0px;
+	top: 28%;
+	border: #fff 5px solid;
+}
+
+.linha{
+	border-top: 1px solid #525252;
+}
+
+.botao-carrinho{
+	position: absolute;
+	bottom: 20px;
+}

@@ -9,7 +9,7 @@ function precototalquantidade1(){
 
     var total1 = tamanhol * quantidade1;
 
-    document.getElementById('totalprimeiro').value = total1;
+    document.getElementById('totalprimeiro').value = total1.toFixed(2);
     console.log(total1)
 }
 
@@ -20,7 +20,7 @@ function precototalquantidade2(){
 
     var total2 = tamanho2 * quantidade2;
 
-    document.getElementById('totalsegundo').value = total2;
+    document.getElementById('totalsegundo').value = total2.toFixed(2);
     console.log(total2)
 }
 
@@ -31,7 +31,7 @@ function precototalquantidade3(){
 
     var total3 = valortamanho3 * quantidade3;
 
-    document.getElementById('totalterceiro').value = total3;
+    document.getElementById('totalterceiro').value = total3.toFixed(2);
     console.log(total3)
 }
 
@@ -42,6 +42,6 @@ function precototalquantidade4(){
 
     var total4 = tamanho4 * quantidade4;
 
-    document.getElementById('totalquarto').value = total4;
+    document.getElementById('totalquarto').value = total4.toFixed(2);
     console.log(total4)
 }

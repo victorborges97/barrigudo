@@ -7,12 +7,12 @@
         <title>Lanchonete do Barrigudo</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="CSS/estilo.css">
-        <script src="js/pedido.js"></script>
+        <script type="text/javascript" src="js/pedido.js"></script>
     </head>
     <body class="container">
        
-        <!--BANNER-->
         <div class="corpo">
+<!--BANNER-->
             <nav class="navbar">
                 <a href="./index.html">
                     <img class="logobar" src="./img/logo-pedido.png" alt="logo do site, barrigudo é como sairá daqui">    
@@ -50,31 +50,31 @@
                     <img class="logo" src="img/banner.png" alt="banner grande do site barrigudo, com o nome e um lanche do lado e uma moto de entrega do outro">
                 <div>            
             </div>
-        
-            <!--PEDIDO--> 
+<!--PEDIDO--> 
             <div class="dropdown">
                 <form method="post">
                     <div class="row lanches">
                         <div class="card">
                             <img class="card-img-top" src="./img/pedido/1.png" alt="Opção de lance: Gordo Bacon">
                             <div class="card-body">
+                                <!--PEDIDO1-->
                                 <div class="div-cards">
                                     <p>Tamanho do Lanche:</p>
                                     <select id="tamanhoprimeiro" class="form-control" onchange="precototalquantidade1()">
                                         <option value="">Selecione um tamanho ...</option>
-                                        <option value="14.90">Simples - 14,90</option>
-                                        <option value="17.00">Duplo - 17,00</option>
-                                        <option value="23.00">Triplo - 23,00</option>
+                                        <option value="14.90">Simples - 14.90</option>
+                                        <option value="17.00">Duplo - 17.00</option>
+                                        <option value="23.00">Triplo - 23.00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadeprimeiro" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade1()">
+                                    <input id="quantidadeprimeiro" class="form-control" type="number" placeholder="Quantos você quer ?" onblur="precototalquantidade1()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <input id="totalprimeiro" class="form-control" type="text" value="0,00" readonly >
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
+                                    <input id="totalprimeiro" class="form-control" type="text" value="0.00" readonly >
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Bacon" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
                         </div>
@@ -82,80 +82,92 @@
                             <img class="card-img-top" src="./img/pedido/2.png" alt="Opção de lance: Gordo Dieta">
                             <div class="card-body">
                                 <div class="div-cards">
+                                    <!--PEDIDO2-->
                                     <p>Tamanho do Lanche:</p>
                                     <select id="tamanhosegundo" class="form-control" onchange="precototalquantidade2()">
                                         <option value="">Selecione um tamanho ...</option>
-                                        <option value="14.90">Simples - 14,90</option>
-                                        <option value="17.00">Duplo - 17,00</option>
-                                        <option value="23.00">Triplo - 23,00</option>
+                                        <option value="14.90">Simples - 14.90</option>
+                                        <option value="17.00">Duplo - 17.00</option>
+                                        <option value="23.00">Triplo - 23.00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadesegundo" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade2()">
+                                    <input id="quantidadesegundo" class="form-control" type="number" placeholder="Quantos você quer ?" onblur="precototalquantidade2()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <input id="totalsegundo" class="form-control" type="text" value="0,00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
+                                    <input id="totalsegundo" class="form-control" type="text" value="0.00" readonly>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Dieta" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-sm-3">
+                        <div class="card" class="col-sm-3">
                             <img class="card-img-top" src="./img/pedido/3.png" alt="Opção de lance: Gorduchão">
                             <div class="card-body">
                                 <div class="div-cards">
+                                    <!--PEDIDO3-->
                                     <p>Tamanho do Lanche:</p>
                                     <select id="tamanhoterceiro" class="form-control" onchange="precototalquantidade3()">
                                         <option value="">Selecione um tamanho ...</option>
-                                        <option value="14.90">Simples - 14,90</option>
-                                        <option value="17.00">Duplo - 17,00</option>
-                                        <option value="23.00">Triplo - 23,00</option>
+                                        <option value="14.90">Simples - 14.90</option>
+                                        <option value="17.00">Duplo - 17.00</option>
+                                        <option value="23.00">Triplo - 23.00</option>
                                     </select>
-                                </div>
+                                </div>  
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadeterceiro" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade3()">
+                                    <input id="quantidadeterceiro" class="form-control" type="number" placeholder="Quantos você quer ?" onblur="precototalquantidade3()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <input id="totalterceiro" class="form-control" type="text" value="0,00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
+                                    <input id="totalterceiro" class="form-control" type="text" value="0.00" readonly>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gorduchao" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
                         </div>
-                        <div class="card col-sm-3">
+                        <div class="card" class="col-sm-3">
                             <img class="card-img-top" src="./img/pedido/4.jpg" alt="Opção de lance: Especial">
                             <div class="card-body">
                                 <div class="div-cards">
+                                    <!--PEDIDO4-->
                                     <p>Tamanho do Lanche:</p>
                                     <select id="tamanhoquarto" class="form-control" onchange="precototalquantidade4()">
                                         <option value="">Selecione um tamanho ...</option>
-                                        <option value="14.90">Simples - 14,90</option>
-                                        <option value="17.00">Duplo - 17,00</option>
-                                        <option value="23.00">Triplo - 23,00</option>
+                                        <option value="14.90">Simples - 14.90</option>
+                                        <option value="17.00">Duplo - 17.00</option>
+                                        <option value="23.00">Triplo - 23.00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadequarto" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade4()">
+                                    <input id="quantidadequarto" class="form-control" type="number" placeholder="Quantos você quer ?" onblur="precototalquantidade4()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <input id="totalquarto" class="form-control" type="text" value="0,00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
+                                    <input id="totalquarto" class="form-control" type="text" value="0.00" readonly>
+                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Do dia" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
+            <div class="carrinho">
+                <h3>Seu Pedido</h3>
+                <hr class="linha">
+                <div class="botao-carrinho">
+                    <p>TOTAL:0 R$</p>
+                    <input class="btn btn-danger" type="button" name="" value="Finalizar pedido">
+                    <input class="btn btn-warning" type="button" name="" value="Reiniciar pedido">
+                </div>
+            </div>
 
 
-            <!--LINHA-->   
+<!--LINHA-->   
             <hr>
 
-            <!--RODAPÉ DA PAGINA-->                     
+<!--RODAPÉ DA PAGINA-->                     
             <footer class="row rodape">
                 <ul class="col-md-4 rod-ul">
                     <h3 class="rod-ul-h3">Horário</h3>
