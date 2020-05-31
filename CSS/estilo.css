@@ -93,17 +93,17 @@ ul #atual a{
 }
 
 /*CSS DO RODAPÉ*/
-#rodape {
+.rodape {
 	margin: 30px;
 	align-items: center;
 }
-#rod-ul {
+.rod-ul {
 	list-style: none;
 }
-#rod-ul-h3 {
+.rod-ul-h3 {
 	text-align: center;
 }
-#rod-ul-li {
+.rod-ul-li {
 	text-align: center;
 }
 hr {
