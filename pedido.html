@@ -59,7 +59,8 @@
                             <div class="card-body">
                                 <div class="div-cards">
                                     <p>Tamanho do Lanche:</p>
-                                    <select id="valor-l" class="form-control">
+                                    <select id="tamanhoprimeiro" class="form-control" onchange="precototalquantidade1()">
+                                        <option value="">Selecione um tamanho ...</option>
                                         <option value="14.90">Simples - 14,90</option>
                                         <option value="17.00">Duplo - 17,00</option>
                                         <option value="23.00">Triplo - 23,00</option>
@@ -67,13 +68,11 @@
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidade-l" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                    <input id="quantidadeprimeiro" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade1()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <fieldset disabled class="input-disabled">
-                                        <input id="valor-total-1" class="form-control" type="number" placeholder="0,00">
-                                    </fieldset>
+                                    <input id="totalprimeiro" class="form-control" type="text" value="0,00" readonly >
                                     <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
@@ -83,21 +82,19 @@
                             <div class="card-body">
                                 <div class="div-cards">
                                     <p>Tamanho do Lanche:</p>
-                                    <select id="valor-2" class="form-control">
-                                        <option value="14,90">Simples - 14,90</option>
-                                        <option value="17,00">Duplo - 17,00</option>
-                                        <option value="23,00">Triplo - 23,00</option>
+                                    <select id="tamanhosegundo" class="form-control" onchange="precototalquantidade2()">
+                                        <option value="14.90">Simples - 14,90</option>
+                                        <option value="17.00">Duplo - 17,00</option>
+                                        <option value="23.00">Triplo - 23,00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidade-2" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                    <input id="quantidadesegundo" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade2()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <fieldset disabled class="input-disabled">
-                                        <input id="valor-total-2" class="form-control" type="number" placeholder="0,00">
-                                    </fieldset>
+                                    <input id="totalsegundo" class="form-control" type="text" value="0,00" readonly>
                                     <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
@@ -107,21 +104,19 @@
                             <div class="card-body">
                                 <div class="div-cards">
                                     <p>Tamanho do Lanche:</p>
-                                    <select id="valor-3" class="form-control">
-                                        <option value="14,90">Simples - 14,90</option>
-                                        <option value="17,00">Duplo - 17,00</option>
-                                        <option value="23,00">Triplo - 23,00</option>
+                                    <select id="tamanhoterceiro" class="form-control" onchange="precototalquantidade3()">
+                                        <option value="14.90">Simples - 14,90</option>
+                                        <option value="17.00">Duplo - 17,00</option>
+                                        <option value="23.00">Triplo - 23,00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidade-3" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                    <input id="quantidadeterceiro" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade3()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <fieldset disabled class="input-disabled">
-                                        <input id="valor-total-3" class="form-control" type="number" placeholder="0,00">
-                                    </fieldset>
+                                    <input id="totalterceiro" class="form-control" type="text" value="0,00" readonly>
                                     <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
@@ -131,21 +126,19 @@
                             <div class="card-body">
                                 <div class="div-cards">
                                     <p>Tamanho do Lanche:</p>
-                                    <select id="valor-4" class="form-control">
-                                        <option value="14,90">Simples - 14,90</option>
-                                        <option value="17,00">Duplo - 17,00</option>
-                                        <option value="23,00">Triplo - 23,00</option>
+                                    <select id="tamanhoquarto" class="form-control" onchange="precototalquantidade4()">
+                                        <option value="14.90">Simples - 14,90</option>
+                                        <option value="17.00">Duplo - 17,00</option>
+                                        <option value="23.00">Triplo - 23,00</option>
                                     </select>
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidade-4" class="form-control" type="number" placeholder="Quantos você quer ?">
+                                    <input id="quantidadequarto" class="form-control" type="text" placeholder="Quantos você quer ?" onblur="precototalquantidade4()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
-                                    <fieldset disabled class="input-disabled">
-                                        <input id="valor-total-4" class="form-control" type="number" placeholder="0,00">
-                                    </fieldset>
+                                    <input id="totalquarto" class="form-control" type="text" value="0,00" readonly>
                                     <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="adicionar-carrinho" onclick=adicionarcarrinho()>
                                 </div>
                             </div>
