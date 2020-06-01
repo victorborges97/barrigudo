@@ -1,16 +1,49 @@
-function adicionarcarrinho(){
-    return alert('EM CONSTRUÇÃO')
+function adicionarcarrinho1(){
+    var nome = document.getElementById('button-name1').name;
+    var quantidade = document.getElementById('quantidadeprimeiro').value;
+    var valor = document.getElementById('tamanhoprimeiro').value;
+
+    alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+    console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+}
+
+function adicionarcarrinho2(){
+    var nome = document.getElementById('button-name2').name;
+    var quantidade = document.getElementById('quantidadesegundo').value;
+    var valor = document.getElementById('tamanhosegundo').value;
+
+    alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+    console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+}
+
+function adicionarcarrinho3(){
+    var nome = document.getElementById('button-name3').name;
+    var quantidade = document.getElementById('quantidadeterceiro').value;
+    var valor = document.getElementById('tamanhoterceiro').value;
+
+    alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+    console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+}
+
+function adicionarcarrinho4(){
+    var nome = document.getElementById('button-name4').name;
+    var quantidade = document.getElementById('quantidadequarto').value;
+    var valor = document.getElementById('tamanhoquarto').value;
+
+    alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+    console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
 }
 
 function precototalquantidade1(){
     //1 lanche
     var tamanhol = document.getElementById('tamanhoprimeiro').value;
     var quantidade1 = document.getElementById('quantidadeprimeiro').value;
-
+    
     var total1 = tamanhol * quantidade1;
 
     document.getElementById('totalprimeiro').value = total1.toFixed(2);
     console.log(total1)
+
 }
 
 function precototalquantidade2(){

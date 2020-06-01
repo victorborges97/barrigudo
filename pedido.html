@@ -74,7 +74,7 @@
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
                                     <input id="totalprimeiro" class="form-control" type="text" value="0.00" readonly >
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Bacon" onclick=adicionarcarrinho()>
+                                    <input id="button-name1" title="1" class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Bacon" onclick="adicionarcarrinho1()">
                                 </div>
                             </div>
                         </div>
@@ -93,16 +93,16 @@
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadesegundo" class="form-control" type="number" placeholder="Quantos você quer ?" onblur="precototalquantidade2()">
+                                    <input id="quantidadesegundo" class="form-control" type="number" placeholder="Quantos você quer ?" oninput="precototalquantidade2()">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
                                     <input id="totalsegundo" class="form-control" type="text" value="0.00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Dieta" onclick=adicionarcarrinho()>
+                                    <input id="button-name2" class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gordo Dieta" onclick=adicionarcarrinho2()>
                                 </div>
                             </div>
                         </div>
-                        <div class="card" class="col-sm-3">
+                        <div class="card">
                             <img class="card-img-top" src="./img/pedido/3.png" alt="Opção de lance: Gorduchão">
                             <div class="card-body">
                                 <div class="div-cards">
@@ -122,11 +122,11 @@
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
                                     <input id="totalterceiro" class="form-control" type="text" value="0.00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gorduchao" onclick=adicionarcarrinho()>
+                                    <input id="button-name3" class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Gorduchao" onclick=adicionarcarrinho3()>
                                 </div>
                             </div>
                         </div>
-                        <div class="card" class="col-sm-3">
+                        <div class="card">
                             <img class="card-img-top" src="./img/pedido/4.jpg" alt="Opção de lance: Especial">
                             <div class="card-body">
                                 <div class="div-cards">
@@ -146,7 +146,7 @@
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
                                     <input id="totalquarto" class="form-control" type="text" value="0.00" readonly>
-                                    <input class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Do dia" onclick=adicionarcarrinho()>
+                                    <input id="button-name4" class="btn btn-danger" type="button" value="Adicionar ao carrinho" name="Do dia" onclick=adicionarcarrinho4()>
                                 </div>
                             </div>
                         </div>
