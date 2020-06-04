@@ -2,6 +2,7 @@ function adicionarcarrinho(id){
     switch (id) {
         case 'gordobacon':
             console.log("Entrou no Gordobacon")
+
             var nome = document.getElementById('gordobacon').name;
             var quantidade = document.getElementById('quantidadeprimeiro').value;
             var valor = document.getElementById('tamanhoprimeiro').value;
@@ -9,13 +10,13 @@ function adicionarcarrinho(id){
             alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
             console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
 
-
+            var pedidos = document.getElementById("pedidos").innerText;
+            
             var retornocarrinho = (quantidade+ "x " +nome)
-            document.getElementById('pedidos').innerHTML = retornocarrinho
-            console.log("Foi adicionado ao carrinho"+retornocarrinho)
-
-            var valortotal = document.getElementById('totalprimeiro').value
-            document.getElementById('valortotal').innerHTML = ("TOTAL:"+valortotal+" R$")
+            var node = document.createElement("p");
+            var textnode = document.createTextNode(retornocarrinho);
+            node.appendChild(textnode);
+            document.getElementById("pedidos").appendChild(node);
             break;
     
         case 'gordodieta':
