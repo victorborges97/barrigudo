@@ -1,4 +1,5 @@
 function adicionarcarrinho(id){
+    "use strict";
     switch (id) {
         case 'gordobacon':
             console.log("Entrou no Gordobacon")
@@ -7,17 +8,38 @@ function adicionarcarrinho(id){
             var quantidade = document.getElementById('quantidadeprimeiro').value;
             var valor = document.getElementById('tamanhoprimeiro').value;
 
-            alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-            console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+              if (quantidade > 0) {
 
-            var pedidos = document.getElementById("pedidos").innerText;
-            
-            var retornocarrinho = (quantidade+ "x " +nome)
+                alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+
+                var pedidos = document.getElementById("pedidos").innerText;
+
+                if (valor==14.90){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Simples");
+                }
+
+                else if (valor==17.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Duplo");
+                }
+
+                else if (valor==23.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Triplo");
+                }
+
+            }
+            else{
+                alert("Você não selecionou a quantidade maior que zero")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                break;
+            }
+                        
             var node = document.createElement("p");
             var textnode = document.createTextNode(retornocarrinho);
             node.appendChild(textnode);
             document.getElementById("pedidos").appendChild(node);
             break;
+
     
         case 'gordodieta':
             console.log("Entrou no Gordodieta")
@@ -25,9 +47,38 @@ function adicionarcarrinho(id){
             var quantidade = document.getElementById('quantidadesegundo').value;
             var valor = document.getElementById('tamanhosegundo').value;
 
-            alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-            console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+            if (quantidade > 0) {
+
+                alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+
+                var pedidos = document.getElementById("pedidos").innerText;
+
+                if (valor==14.90){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Simples");
+                }
+
+                else if (valor==17.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Duplo");
+                }
+
+                else if (valor==23.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Triplo");
+                }
+
+            }
+            else{
+                alert("Você não selecionou a quantidade maior que zero")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                break;
+            }
+                        
+            var node = document.createElement("p");
+            var textnode = document.createTextNode(retornocarrinho);
+            node.appendChild(textnode);
+            document.getElementById("pedidos").appendChild(node);
             break;
+            
 
         case 'gorduchao':
             console.log("Entrou no gorduchao")
@@ -35,24 +86,82 @@ function adicionarcarrinho(id){
             var quantidade = document.getElementById('quantidadeterceiro').value;
             var valor = document.getElementById('tamanhoterceiro').value;
         
-            alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-            console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-        break;
+            if (quantidade > 0) {
 
+                alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+
+                var pedidos = document.getElementById("pedidos").innerText;
+
+                if (valor==14.90){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Simples");
+                }
+
+                else if (valor==17.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Duplo");
+                }
+
+                else if (valor==23.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Triplo");
+                }
+
+            }
+            else{
+                alert("Você não selecionou a quantidade maior que zero")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                break;
+            }
+                        
+            var node = document.createElement("p");
+            var textnode = document.createTextNode(retornocarrinho);
+            node.appendChild(textnode);
+            document.getElementById("pedidos").appendChild(node);
+            break;
+    
         case 'dodia':
             console.log("Entrou no dodia")
             var nome = document.getElementById('dodia').name;
             var quantidade = document.getElementById('quantidadequarto').value;
             var valor = document.getElementById('tamanhoquarto').value;
         
-            alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-            console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
-        break;
+            if (quantidade > 0) {
+
+                alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+
+                var pedidos = document.getElementById("pedidos").innerText;
+
+                if (valor==14.90){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Simples");
+                }
+
+                else if (valor==17.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Duplo");
+                }
+
+                else if (valor==23.00){
+                    var retornocarrinho = (quantidade+ "x " +nome+ " Triplo");
+                }
+
+            }
+            else{
+                alert("Você não selecionou a quantidade maior que zero")
+                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
+                break;
+            }
+                        
+            var node = document.createElement("p");
+            var textnode = document.createTextNode(retornocarrinho);
+            node.appendChild(textnode);
+            document.getElementById("pedidos").appendChild(node);
+            break;
+    
     }
     
 }
-
+//FIM DO CARRINHO
 function somarvalor(name){
+    "use strict";
     console.log(name)
     switch (name) {
         case 'onelanche':
