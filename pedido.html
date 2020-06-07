@@ -69,7 +69,7 @@
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadeprimeiro" min="0" class="form-control" type="number" name="onelanche" placeholder="Quantos você quer ?" oninput="somarvalor(this.name)">
+                                    <input id="quantidadeprimeiro" min="1" class="form-control" type="number" name="onelanche" placeholder="Quantos você quer ?" oninput="somarvalor(this.name)">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadesegundo" class="form-control" type="number" placeholder="Quantos você quer ?" name="twolanche" oninput="somarvalor(this.name)">
+                                    <input id="quantidadesegundo" min="1" class="form-control" type="number" placeholder="Quantos você quer ?" name="twolanche" oninput="somarvalor(this.name)">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
@@ -117,7 +117,7 @@
                                 </div>  
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadeterceiro" class="form-control" type="number" placeholder="Quantos você quer ?" name="trilanche" oninput="somarvalor(this.name)">
+                                    <input id="quantidadeterceiro" min="1" class="form-control" type="number" placeholder="Quantos você quer ?" name="trilanche" oninput="somarvalor(this.name)">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="div-cards">
                                     <p>Quantidade:</p>
-                                    <input id="quantidadequarto" class="form-control" type="number" placeholder="Quantos você quer ?" name="fourlanche" oninput="somarvalor(this.name)">
+                                    <input id="quantidadequarto" min="1" class="form-control" type="number" placeholder="Quantos você quer ?" name="fourlanche" oninput="somarvalor(this.name)">
                                 </div>
                                 <div class="div-cards">    
                                     <p>Valor a pagar:</p>
@@ -153,6 +153,7 @@
                     </div>
                 </form>
             </div>
+            <!--Carrinho-->
             <div class="carrinho">
                 <div>
                     <h3>Seu Pedido</h3>
