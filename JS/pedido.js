@@ -1,3 +1,4 @@
+"use strict";
 var pedido1 = [0,0,0];
 var pedido2 = [0,0,0];
 var pedido3 = [0,0,0];
@@ -5,7 +6,6 @@ var pedido4 = [0,0,0];
 var total = 0;
 
 function adicionarcarrinho(id){
-    "use strict";
     switch (id) {
         case 'gordobacon':
             console.log("Entrou no Gordobacon")
@@ -255,11 +255,11 @@ function somarvalor(name){
     }
 }
 
-
 function Finalizar (id) {
     if (total < 1) {
-        alert ('Seu carrinho está vazio')
+        alert ('Seu carrinho está vazio');
     }
-    else
-        alert (total); 
+    else{
+        alert ('Seu total: '+ total.toFixed(2)); 
+    }
 }
