@@ -3,7 +3,6 @@ var pedido2 = [0,0,0];
 var pedido3 = [0,0,0];
 var pedido4 = [0,0,0];
 var total = 0;
-var mudap = 0
 
 function adicionarcarrinho(id){
     "use strict";
@@ -256,3 +255,11 @@ function somarvalor(name){
     }
 }
 
+
+function Finalizar (id) {
+    if (total < 1) {
+        alert ('Seu carrinho está vazio')
+    }
+    else
+        alert (total); 
+}
