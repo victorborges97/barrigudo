@@ -3,6 +3,7 @@ var pedido2 = [0,0,0];
 var pedido3 = [0,0,0];
 var pedido4 = [0,0,0];
 var total = 0;
+var mudap = 0
 
 function adicionarcarrinho(id){
     "use strict";
@@ -11,38 +12,36 @@ function adicionarcarrinho(id){
             console.log("Entrou no Gordobacon")
 
             var nome = document.getElementById('gordobacon').name;
-            var quantidade = document.getElementById('quantidadeprimeiro').value;
-            var valor = document.getElementById('tamanhoprimeiro').value;
+            var quantidade = parseInt(document.getElementById('quantidadeprimeiro').value);
+            var valor = parseFloat(document.getElementById('tamanhoprimeiro').value);
 
               if (quantidade > 0 & valor > 0) {
 
                 alert("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
                 console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
 
-                var pedidos = document.getElementById("pedidos").innerText;
-
                 if (valor==14.90){
-                    var retornocarrinho = (quantidade+ "x " +nome+ " Simples");
-                    var preço = parseFloat(valor * quantidade);
+                    var preço = valor * quantidade;
                     total = preço + total;
-                    document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2));
-                    var numero = parseFloat(quantidade); 
-                    pedido1 [0] = numero + pedido1[0];
-                    console.log(pedido1);
+                    document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2)); //Atualiza o Valor total
+                    pedido1 [0] = quantidade + pedido1[0];
+                    document.getElementById("00").innerText = (pedido1 [0]+ "X " +nome+ " Simples") //Atualiza a quantidade do pedido
                 }
 
                 else if (valor==17.00){
-                    var retornocarrinho = (quantidade+ "x " +nome+ " Duplo");
-                    var preço = parseFloat(valor * quantidade);
+                    var preço = valor * quantidade;
                     total = preço + total;
                     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2));
+                    pedido1 [1] = quantidade + pedido1[1];
+                    document.getElementById("01").innerText = (pedido1 [1]+ "X " +nome+ " Duplo") //Atualiza a quantidade do pedido
                 }
 
                 else if (valor==23.00){
-                    var retornocarrinho = (quantidade+ "x " +nome+ " Triplo");
-                    var preço = parseFloat(valor * quantidade);
+                    var preço = valor * quantidade;
                     total = preço + total;  
                     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2));
+                    pedido1 [2] = quantidade + pedido1[2];
+                    document.getElementById("02").innerText = (pedido1 [2]+ "X " +nome+ " Triplo") //Atualiza a quantidade do pedido
                 }
 
             }
@@ -51,10 +50,10 @@ function adicionarcarrinho(id){
                 break;
             }
                         
-            var node = document.createElement("p");
-            var textnode = document.createTextNode(retornocarrinho);
-            node.appendChild(textnode);
-            document.getElementById("pedidos").appendChild(node);
+            //var node = document.createElement("p");
+            //var textnode = document.createTextNode(retornocarrinho);
+            //node.appendChild(textnode);
+            //document.getElementById("pedidos").appendChild(node)
             break;
 
     
