@@ -5,19 +5,33 @@ var pedido3 = [0,0,0];
 var pedido4 = [0,0,0];
 var total = 0;
 
+function Reiniciar(){
+    total = 0
+    document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2)); //Atualiza o Valor total
+
+    document.getElementById("00","01","02","10","11","12","20","21","22","30","31","32").innerText = (""); //Atualiza o Valor total  
+    
+    pedido1 = [0,0,0];
+    pedido2 = [0,0,0];
+    pedido3 = [0,0,0];
+    pedido4 = [0,0,0];
+}
+
+function reset(){
+    document.getElementById("reset-form").reset();
+}
+
 function adicionarcarrinho(id){
     switch (id) {
         case 'gordobacon':
-            console.log("Entrou no Gordobacon")
 
             var nome = document.getElementById('gordobacon').name;
             var quantidade1 = parseInt(document.getElementById('quantidadeprimeiro').value);
             var valor1 = parseFloat(document.getElementById('tamanhoprimeiro').value);
 
-              if (quantidade1 > 0 & valor1 > 0) {
+            if (quantidade1 > 0 & valor1 > 0) {
 
                 alert("Você adicionou: " +quantidade1+ "x " +nome+ " - " +valor1+ "R$")
-                console.log("Você adicionou: " +quantidade1+ "x " +nome+ " - " +valor1+ "R$")
 
                 if (valor1==14.90){
                     var preço = valor1 * quantidade1;
@@ -25,6 +39,7 @@ function adicionarcarrinho(id){
                     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2)); //Atualiza o Valor total
                     pedido1 [0] = quantidade1 + pedido1[0];
                     document.getElementById("00").innerText = (pedido1 [0]+ "X " +nome+ " Simples") //Atualiza a quantidade do pedido
+                    
                 }
 
                 else if (valor1==17.00){
@@ -33,6 +48,7 @@ function adicionarcarrinho(id){
                     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2));
                     pedido1 [1] = quantidade1 + pedido1[1];
                     document.getElementById("01").innerText = (pedido1 [1]+ "X " +nome+ " Duplo") //Atualiza a quantidade do pedido
+                    
                 }
 
                 else if (valor1==23.00){
@@ -41,23 +57,19 @@ function adicionarcarrinho(id){
                     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2));
                     pedido1 [2] = quantidade1 + pedido1[2];
                     document.getElementById("02").innerText = (pedido1 [2]+ "X " +nome+ " Triplo") //Atualiza a quantidade do pedido
+                    
                 }
-
+                reset()
             }
             else{
                 alert("Você não selecionou a quantidade maior que zero ou tamanho do lache")
                 break;
             }
-                        
-            //var node = document.createElement("p");
-            //var textnode = document.createTextNode(retornocarrinho);
-            //node.appendChild(textnode);
-            //document.getElementById("pedidos").appendChild(node)
+
             break;
 
     
         case 'gordodieta':
-            console.log("Entrou no Gordodieta")
 
             var nome = document.getElementById('gordodieta').name;
             var quantidade2 = parseInt(document.getElementById('quantidadesegundo').value);
@@ -66,7 +78,6 @@ function adicionarcarrinho(id){
            if (quantidade2 > 0 & valor2 > 0) {
 
                 alert("Você adicionou: " +quantidade2+ "x " +nome+ " - " +valor2+ "R$")
-                console.log("Você adicionou: " +quantidade2+ "x " +nome+ " - " +valor2+ "R$")
 
                 if (valor2==14.90){
                     var preço = valor2 * quantidade2;
@@ -91,23 +102,16 @@ function adicionarcarrinho(id){
                     pedido2 [2] = quantidade2 + pedido2[2];
                     document.getElementById("12").innerText = (pedido2 [2]+ "X " +nome+ " Triplo") //Atualiza a quantidade do pedido
                 }
-
+                reset()
             }
             else{
                 alert("Você não selecionou a quantidade maior que zero")
-                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor+ "R$")
                 break;
             }
-                        
-            //var node = document.createElement("p");
-            //var textnode = document.createTextNode(retornocarrinho);
-            //node.appendChild(textnode);
-            //document.getElementById("pedidos").appendChild(node);
             break;
             
 
         case 'gorduchao':
-            console.log("Entrou no gorduchao")
             
             var nome = document.getElementById('gorduchao').name;
             var quantidade3 = parseInt(document.getElementById('quantidadeterceiro').value);
@@ -116,7 +120,6 @@ function adicionarcarrinho(id){
            if (quantidade3 > 0 & valor3 > 0) {
 
                 alert("Você adicionou: " +quantidade3+ "x " +nome+ " - " +valor3+ "R$")
-                console.log("Você adicionou: " +quantidade3+ "x " +nome+ " - " +valor3+ "R$")
 
                 if (valor3==14.90){
                     var preço = valor3 * quantidade3;
@@ -141,22 +144,15 @@ function adicionarcarrinho(id){
                     pedido3 [2] = quantidade3 + pedido3[2];
                     document.getElementById("22").innerText = (pedido3 [2]+ "X " +nome+ " Triplo") //Atualiza a quantidade do pedido
                 }
-
+                reset()
             }
             else{
                 alert("Você não selecionou a quantidade maior que zero")
-                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor3+ "R$")
                 break;
             }
-                        
-            //var node = document.createElement("p");
-            //var textnode = document.createTextNode(retornocarrinho);
-            //node.appendChild(textnode);
-            //document.getElementById("pedidos").appendChild(node);
             break;
     
         case 'dodia':
-            console.log("Entrou no dodia")
             var nome = document.getElementById('dodia').name;
             var quantidade4 = parseInt(document.getElementById('quantidadequarto').value);
             var valor4 = parseFloat(document.getElementById('tamanhoquarto').value);
@@ -164,7 +160,6 @@ function adicionarcarrinho(id){
             if (quantidade4 > 0 & valor4 > 0) {
 
                 alert("Você adicionou: " +quantidade4+ "x " +nome+ " - " +valor4+ "R$")
-                console.log("Você adicionou: " +quantidade4+ "x " +nome+ " - " +valor4+ "R$")
 
                 if (valor4==14.90){
                     var preço = valor4 * quantidade4;
@@ -189,18 +184,12 @@ function adicionarcarrinho(id){
                     pedido4 [2] = quantidade4 + pedido4[2];
                     document.getElementById("32").innerText = (pedido4 [2]+ "X " +nome+ " Triplo") //Atualiza a quantidade do pedido
                 }
-
+                reset()
             }
             else{
                 alert("Você não selecionou a quantidade maior que zero")
-                console.log("Você adicionou: " +quantidade+ "x " +nome+ " - " +valor4+ "R$")
                 break;
             }
-                        
-            //var node = document.createElement("p");
-            //var textnode = document.createTextNode(retornocarrinho);
-            //node.appendChild(textnode);
-            //document.getElementById("pedidos").appendChild(node);
             break;
 
         default:
@@ -261,11 +250,19 @@ function somarvalor(name){
 }
 
 function Finalizar (id) {
+    //var list = document.getElementsByClassName("lanche")[i].innerText;
+    var list = document.getElementById('pedidos').innerText;
 
+    
+    //onsole.log(childDivs)
     if (total < 1) {
         alert ('Seu carrinho está vazio');
+        
+        //console.log(teste)
+
     }
     else{
-        alert ('Seu total: '+ total.toFixed(2)); 
+        alert (`${list} \n\nSeu total: ${total.toFixed(2)}`); 
+        
     }
 }
