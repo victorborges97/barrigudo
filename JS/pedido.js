@@ -9,12 +9,28 @@ function Reiniciar(){
     total = 0
     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2)); //Atualiza o Valor total
 
-    document.getElementById("00","01","02","10","11","12","20","21","22","30","31","32").innerText = (""); //Atualiza o Valor total  
-    
+    document.getElementById("00").innerText = (""); 
+    document.getElementById("01").innerText = ("");
+    document.getElementById("02").innerText = ("");
+    document.getElementById("10").innerText = ("");
+    document.getElementById("11").innerText = ("");
+    document.getElementById("12").innerText = ("");
+    document.getElementById("20").innerText = ("");
+    document.getElementById("21").innerText = ("");
+    document.getElementById("22").innerText = ("");
+    document.getElementById("30").innerText = ("");
+    document.getElementById("31").innerText = ("");
+    document.getElementById("32").innerText = ("");
     pedido1 = [0,0,0];
     pedido2 = [0,0,0];
     pedido3 = [0,0,0];
     pedido4 = [0,0,0];
+
+    console.log(pedido1);
+    console.log(pedido2);
+    console.log(pedido3);
+    console.log(pedido4);
+    console.log(pedidos);
 }
 
 function reset(){
@@ -263,6 +279,6 @@ function Finalizar (id) {
     }
     else{
         alert (`${list} \n\nSeu total: ${total.toFixed(2)}`); 
-        
+        Reiniciar()
     }
 }
