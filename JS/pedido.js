@@ -5,74 +5,6 @@ var pedido3 = [0,0,0];
 var pedido4 = [0,0,0];
 var total = 0;
 
-// VARIAVEIS DO LANCHE GORDOBACON - LANCHE 1
-var nome1 = document.getElementById('gordobacon').name;
-var quantidade1 = parseInt(document.getElementById('quantidadeprimeiro').value);
-var valor1 = parseFloat(document.getElementById('tamanhoprimeiro').value);
-var preco1lanche1 = valor1 * quantidade1;
-var preco2lanche1 = valor1 * quantidade1;
-var preco3lanche1 = valor1 * quantidade1;
-
-    // VARIAVEIS SOMAR VALOR
-    var tamanhol = document.getElementById('tamanhoprimeiro').value;
-    var quantidade1 = document.getElementById('quantidadeprimeiro').value;
-    var total1 = tamanhol * quantidade1;
-    // TERMINA VARIAVEIS SOMAR VALOR
-
-// TERMINA VARIAVEIS DO LANCHE GORDOBACON  - LANCHE 1
-
-// VARIAVEIS DO LANCHE GORDODIETA  - LANCHE 2
-var nome2 = document.getElementById('gordodieta').name;
-var quantidade2 = parseInt(document.getElementById('quantidadesegundo').value);
-var valor2 = parseFloat(document.getElementById('tamanhosegundo').value);
-var preco1lanche2 = valor2 * quantidade2;
-var preco2lanche2 = valor2 * quantidade2;
-var preco3lanche2 = valor2 * quantidade2;
-
-    // VARIAVEIS SOMAR VALOR 
-    var tamanho2 = document.getElementById('tamanhosegundo').value;
-    var quantidade2 = document.getElementById('quantidadesegundo').value;
-    var total2 = tamanho2 * quantidade2;
-    // TERMINA VARIAVEIS SOMAR VALOR 
-
-// TERMINA VARIAVEIS DO LANCHE GORDODIETA  - LANCHE 2
-
-// VARIAVEIS DO LANCHE GORDUCHAO  - LANCHE 3
-var nome3 = document.getElementById('gorduchao').name;
-var quantidade3 = parseInt(document.getElementById('quantidadeterceiro').value);
-var valor3 = parseFloat(document.getElementById('tamanhoterceiro').value);
-var preco1lanche3 = valor3 * quantidade3;
-var preco2lanche3 = valor3 * quantidade3;
-var preco3lanche3 = valor3 * quantidade3;
-
-    // VARIAVEIS SOMAR VALOR 
-    var valortamanho3 = document.getElementById('tamanhoterceiro').value;
-    var quantidade3 = document.getElementById('quantidadeterceiro').value;
-    var total3 = valortamanho3 * quantidade3;
-    // TERMINA VARIAVEIS SOMAR VALOR 
-
-// TERMINA VARIAVEIS DO LANCHE GORDUCHAO  - LANCHE 3
-
-// VARIAVEIS DO LANCHE DODIA  - LANCHE 4
-var nome4 = document.getElementById('dodia').name;
-var quantidade4 = parseInt(document.getElementById('quantidadequarto').value);
-var valor4 = parseFloat(document.getElementById('tamanhoquarto').value);
-var preco1lanche4 = valor4 * quantidade4;
-var preco2lanche4 = valor4 * quantidade4;
-var preco3lanche4 = valor4 * quantidade4;
-
-    // VARIAVEIS SOMAR VALOR 
-    var tamanho4 = document.getElementById('tamanhoquarto').value;
-    var quantidade4 = document.getElementById('quantidadequarto').value;
-    var total4 = tamanho4 * quantidade4;
-    // TERMINA VARIAVEIS SOMAR VALOR 
-
-// TERMINA VARIAVEIS DO LANCHE DODIA  - LANCHE 4
-
-// VARIAVEL DA FUNCÇÃO FINALIZAR
-var list = document.getElementById('pedidos').innerText;
-// FIM VARIAVEL DA FUNCÇÃO FINALIZAR
-
 function Reiniciar(){
     total = 0;
     document.getElementById("valortotal").innerText = ("TOTAL: " + total.toFixed(2)); //Atualiza o Valor total
@@ -106,6 +38,42 @@ function reset(){
 }
 // ADICIONA AO CARRINHO E FAZ O ALERT, ADICIONA O VALOR TOTAL E A DESCRIÇÃO DO PEDIDO NO CARRINHO
 function adicionarcarrinho(id){
+    // VARIAVEIS DO LANCHE GORDOBACON - LANCHE 1
+    var nome1 = document.getElementById('gordobacon').name;
+    var quantidade1 = parseInt(document.getElementById('quantidadeprimeiro').value);
+    var valor1 = parseFloat(document.getElementById('tamanhoprimeiro').value);
+    var preco1lanche1 = valor1 * quantidade1;
+    var preco2lanche1 = valor1 * quantidade1;
+    var preco3lanche1 = valor1 * quantidade1;
+    // TERMINA VARIAVEIS DO LANCHE GORDOBACON  - LANCHE 1
+
+    // VARIAVEIS DO LANCHE GORDODIETA  - LANCHE 2
+    var nome2 = document.getElementById('gordodieta').name;
+    var quantidade2 = parseInt(document.getElementById('quantidadesegundo').value);
+    var valor2 = parseFloat(document.getElementById('tamanhosegundo').value);
+    var preco1lanche2 = valor2 * quantidade2;
+    var preco2lanche2 = valor2 * quantidade2;
+    var preco3lanche2 = valor2 * quantidade2;
+    // TERMINA VARIAVEIS DO LANCHE GORDODIETA  - LANCHE 2
+
+    // VARIAVEIS DO LANCHE GORDUCHAO  - LANCHE 3
+    var nome3 = document.getElementById('gorduchao').name;
+    var quantidade3 = parseInt(document.getElementById('quantidadeterceiro').value);
+    var valor3 = parseFloat(document.getElementById('tamanhoterceiro').value);
+    var preco1lanche3 = valor3 * quantidade3;
+    var preco2lanche3 = valor3 * quantidade3;
+    var preco3lanche3 = valor3 * quantidade3;
+    // TERMINA VARIAVEIS DO LANCHE GORDUCHAO  - LANCHE 3
+
+    // VARIAVEIS DO LANCHE DODIA  - LANCHE 4
+    var nome4 = document.getElementById('dodia').name;
+    var quantidade4 = parseInt(document.getElementById('quantidadequarto').value);
+    var valor4 = parseFloat(document.getElementById('tamanhoquarto').value);
+    var preco1lanche4 = valor4 * quantidade4;
+    var preco2lanche4 = valor4 * quantidade4;
+    var preco3lanche4 = valor4 * quantidade4;
+    // TERMINA VARIAVEIS DO LANCHE DODIA  - LANCHE 4
+
     switch (id) {
         case 'gordobacon':
             if (quantidade1 > 0 && valor1 > 0) {
@@ -252,6 +220,31 @@ function adicionarcarrinho(id){
 }
 //FIM DO CARRINHO
 function somarvalor(name){
+    // VARIAVEIS SOMAR VALOR - LANCHE 1
+    var tamanhol = document.getElementById('tamanhoprimeiro').value;
+    var quantidade1 = document.getElementById('quantidadeprimeiro').value;
+    var total1 = tamanhol * quantidade1;
+    // TERMINA VARIAVEIS SOMAR VALOR - LANCHE 1
+
+    // VARIAVEIS SOMAR VALOR - LANCHE 2
+    var tamanho2 = document.getElementById('tamanhosegundo').value;
+    var quantidade2 = document.getElementById('quantidadesegundo').value;
+    var total2 = tamanho2 * quantidade2;
+    // TERMINA VARIAVEIS SOMAR VALOR - LANCHE 2
+
+    // VARIAVEIS SOMAR VALOR - LANCHE 3
+    var valortamanho3 = document.getElementById('tamanhoterceiro').value;
+    var quantidade3 = document.getElementById('quantidadeterceiro').value;
+    var total3 = valortamanho3 * quantidade3;
+    // TERMINA VARIAVEIS SOMAR VALOR - LANCHE 3
+
+    // VARIAVEIS SOMAR VALOR - LANCHE 4
+    var tamanho4 = document.getElementById('tamanhoquarto').value;
+    var quantidade4 = document.getElementById('quantidadequarto').value;
+    var total4 = tamanho4 * quantidade4;
+    // TERMINA VARIAVEIS SOMAR VALOR - LANCHE 4
+
+
     "use strict";
     console.log(name);
     switch (name) {
@@ -279,6 +272,10 @@ function somarvalor(name){
 }
 //BOTAO DE FINALIZAR
 function Finalizar (id) {
+    // VARIAVEL DA FUNÇÃO FINALIZAR
+    var list = document.getElementById('pedidos').innerText;
+    // FIM VARIAVEL DA FUNÇÃO FINALIZAR
+
     if (total < 1) {
         alert ('Seu carrinho está vazio');
     }
